@@ -1,0 +1,293 @@
+{
+  "hero": {
+    "title": "Skyshot",
+    "subtitle": "Aerial Perspectives",
+    "location": "from the Heart of Saudi Arabia",
+    "description": "Premium aerial and ground photography services. Discover stunning visual content, book consultations, and explore the beauty of Saudi Arabia from above.",
+    "exploreButton": "Explore Our Work",
+    "consultationButton": "Book a Free Consultation"
+  },
+  "customerFeedback": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real experiences from satisfied customers",
+    "testimonials": [
+      {
+        "name": "Ahmed Mohammed",
+        "location": "Riyadh",
+        "rating": 5,
+        "comment": "Amazing aerial photography service, results exceeded my expectations"
+      },
+      {
+        "name": "Fatima Al-Ali",
+        "location": "Jeddah",
+        "rating": 5,
+        "comment": "High professionalism in photography and service, highly recommend"
+      },
+      {
+        "name": "Khalid Al-Saad",
+        "location": "Dammam",
+        "rating": 5,
+        "comment": "Excellent photography for my wedding, thank you"
+      },
+      {
+        "name": "Nora Al-Qahtani",
+        "location": "Makkah",
+        "rating": 5,
+        "comment": "High quality and reasonable prices, wonderful experience"
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Get notified about discounts and free consultation offers",
+    "description": "Subscribe to our newsletter and be the first to know about special offers, photography tips, and exclusive content.",
+    "placeholder": "Enter your email address",
+    "subscribeButton": "Subscribe Now",
+    "successMessage": "Thank you for subscribing!",
+    "benefits": [
+      "Exclusive discounts and offers",
+      "Free consultation opportunities",
+      "Photography tips and tutorials",
+      "Latest project showcases"
+    ]
+  },
+  "auth": {
+    "title": "Join Skyshot Community",
+    "subtitle": "Create your account to access exclusive features",
+    "loginTab": "Login",
+    "registerTab": "Sign Up",
+    "loginTitle": "Welcome Back",
+    "registerTitle": "Create Account",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number",
+    "loginButton": "Sign In",
+    "registerButton": "Create Account",
+    "forgotPassword": "Forgot Password?",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "switchToLogin": "Sign In",
+    "switchToRegister": "Sign Up",
+    "passwordMismatch": "Passwords do not match",
+    "loginSuccess": "Login successful!",
+    "registerSuccess": "Account created successfully!"
+  },
+  "consultations": {
+    "title": "Free Consultation",
+    "subtitle": "Get expert advice for your photography needs",
+    "description": "Book a free consultation with our professional photographers to discuss your project requirements and get personalized recommendations.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "serviceType": "Service Type",
+      "projectDetails": "Project Details",
+      "preferredDate": "Preferred Date",
+      "location": "Location",
+      "submitButton": "Book Consultation",
+      "successTitle": "Consultation Booked!",
+      "successMessage": "Thank you for booking a consultation. We'll contact you within 24 hours to confirm the details."
+    },
+    "serviceTypes": [
+      { "value": "aerial", "label": "Aerial Drone Photography" },
+      { "value": "ground", "label": "Ground Photography" },
+      { "value": "event", "label": "Event Photography" },
+      { "value": "commercial", "label": "Commercial Photography" },
+      { "value": "real-estate", "label": "Real Estate Photography" },
+      { "value": "other", "label": "Other" }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our services",
+    "questions": [
+      {
+        "question": "What types of photography services do you offer?",
+        "answer": "We offer aerial drone photography, ground photography, event and wedding photography, commercial and real estate photography, plus editing and post-production services."
+      },
+      {
+        "question": "How long does it take to deliver photos and videos?",
+        "answer": "We typically deliver edited photos within 3-5 business days and videos within 7-10 business days. For urgent cases, we can provide express delivery within 24-48 hours for an additional fee."
+      },
+      {
+        "question": "Do you cover all regions of Saudi Arabia?",
+        "answer": "Yes, we provide our services throughout Saudi Arabia. We have specialized teams in major cities and can travel to any region based on project requirements."
+      },
+      {
+        "question": "What are the costs of photography services?",
+        "answer": "Costs vary based on service type, shooting duration, and location. We offer various packages starting from 500 SAR for basic photography up to 5000 SAR for large projects. Book a free consultation for a customized quote."
+      },
+      {
+        "question": "Do you need permits for aerial photography?",
+        "answer": "Yes, we are licensed by the Saudi General Authority of Civil Aviation and have all necessary permits for aerial photography. We handle all legal procedures and obtain required permits for each project."
+      },
+      {
+        "question": "Can I get the raw unedited photos?",
+        "answer": "Yes, you can request raw photos for an additional fee. We typically provide edited photos as part of our basic service, but we can provide raw files if you need them for special purposes."
+      },
+      {
+        "question": "What equipment do you use for aerial photography?",
+        "answer": "We use professional-grade drones including DJI Mavic 3 Pro, DJI Air 2S, and specialized equipment for different shooting conditions. All our equipment is regularly maintained and updated."
+      },
+      {
+        "question": "Do you offer video editing and post-production services?",
+        "answer": "Yes, we provide comprehensive video editing services including color correction, audio enhancement, motion graphics, and professional post-production to deliver high-quality final products."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Client Success Stories",
+    "subtitle": "Detailed testimonials from our satisfied customers",
+    "testimonials": [
+      {
+        "name": "Mohammed Al-Otaibi",
+        "position": "Marketing Manager",
+        "company": "Riyadh Development Company",
+        "rating": 5,
+        "testimonial": "I worked with Skyshot team for our new real estate project photography, and the results were amazing. The aerial photos showed the project very professionally and helped us a lot in marketing. The team is professional and cooperative, and delivery was on time."
+      },
+      {
+        "name": "Sarah Al-Ahmad",
+        "position": "Wedding Planner",
+        "company": "Wedding Dreams",
+        "rating": 5,
+        "testimonial": "The best photography team I've worked with! They photographed my daughter's wedding beautifully, the aerial shots added a magical touch to the event. The team was polite and professional, and the final result exceeded all my expectations. I highly recommend them for any important occasion."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Latest from Our Blog",
+    "subtitle": "Photography tips, tutorials, and industry insights",
+    "viewAllButton": "View All Posts",
+    "posts": [
+      {
+        "title": "Complete Guide to Drone Photography in Saudi Arabia",
+        "excerpt": "Learn the best practices and techniques for stunning aerial photography, plus laws and permits required in the Kingdom",
+        "readTime": "8 min read",
+        "category": "Photography Techniques",
+        "date": "2024-01-15"
+      },
+      {
+        "title": "Top 10 Aerial Photography Locations in Riyadh",
+        "excerpt": "Discover the most beautiful locations in the Saudi capital for stunning aerial shots, with tips on the best shooting times",
+        "readTime": "6 min read",
+        "category": "Photography Locations",
+        "date": "2024-01-10"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Skyshot",
+    "subtitle": "Your trusted partner for professional photography services",
+    "description": "Founded in the heart of Saudi Arabia, Skyshot specializes in capturing breathtaking aerial and ground photography. Our team of certified professionals combines cutting-edge technology with artistic vision to deliver exceptional visual content.",
+    "stats": [
+      { "number": "500+", "label": "Projects Completed" },
+      { "number": "50+", "label": "Happy Clients" },
+      { "number": "5", "label": "Years Experience" },
+      { "number": "24/7", "label": "Support Available" }
+    ],
+    "services": [
+      {
+        "title": "Aerial Photography",
+        "description": "Professional aerial photography with latest drone technology"
+      },
+      {
+        "title": "Photography Services",
+        "description": "Comprehensive photography services for events and business"
+      },
+      {
+        "title": "Editing & Post-Production",
+        "description": "Professional editing and exceptional visual content production"
+      }
+    ]
+  },
+  "support": {
+    "title": "Customer Support",
+    "subtitle": "We're here to help you every step of the way",
+    "description": "Get in touch with our support team for any questions or assistance you need.",
+    "methods": [
+      {
+        "title": "Live Chat",
+        "description": "Chat with our support team directly",
+        "availability": "Available 24/7",
+        "responseTime": "Instant"
+      },
+      {
+        "title": "Email Support",
+        "description": "Send your inquiry via email",
+        "availability": "Always Available",
+        "responseTime": "Within 2-4 hours"
+      },
+      {
+        "title": "Phone Support",
+        "description": "Call us directly for immediate assistance",
+        "availability": "9 AM - 6 PM",
+        "responseTime": "Immediate"
+      }
+    ],
+    "contactForm": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "priority": "Priority",
+      "submitButton": "Send Message",
+      "successMessage": "Message sent successfully! We'll get back to you soon."
+    },
+    "contactInfo": {
+      "email": "support@skyshot.sa",
+      "phone": "+966 11 234 5678",
+      "address": "Riyadh, Saudi Arabia"
+    }
+  },
+  "delivery": {
+    "title": "Delivery & Access Policy",
+    "subtitle": "Fast, secure, and reliable content delivery",
+    "description": "Learn about our delivery methods, timelines, and policies for accessing your photography content.",
+    "methods": [
+      {
+        "title": "Digital Download",
+        "description": "Direct download via secure link",
+        "timeframe": "Instant after processing",
+        "features": ["Secure link", "Valid for 30 days", "Multiple downloads"]
+      },
+      {
+        "title": "Client Portal",
+        "description": "Access through your personal account",
+        "timeframe": "Always available",
+        "features": [
+          "Permanent archive",
+          "Quick preview",
+          "Project organization"
+        ]
+      },
+      {
+        "title": "Physical Delivery",
+        "description": "USB or external hard drive",
+        "timeframe": "2-3 business days",
+        "features": [
+          "Professional packaging",
+          "Shipping insurance",
+          "Order tracking"
+        ]
+      }
+    ],
+    "policies": {
+      "refund": {
+        "title": "Refund Policy",
+        "description": "Full refund available within 7 days if not satisfied with the service quality."
+      },
+      "security": {
+        "title": "File Security",
+        "description": "All files are encrypted and stored securely with backup systems for data protection."
+      },
+      "timeline": {
+        "title": "Delivery Timeline",
+        "description": "Standard delivery: 3-5 days for photos, 7-10 days for videos. Express delivery available."
+      }
+    }
+  }
+}

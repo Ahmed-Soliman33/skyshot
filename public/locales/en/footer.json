@@ -1,0 +1,62 @@
+{
+  "footer": {
+    "stats": {
+      "clients": "Happy Clients",
+      "projects": "Projects Done",
+      "awards": "Awards Won",
+      "rating": "Client Rating"
+    },
+    "cta": {
+      "title": "Ready to Capture Your Vision?",
+      "subtitle": "Let's create something extraordinary together. From aerial photography to cinematic videos, we bring your ideas to life.",
+      "button": "Start Your Project"
+    },
+    "company": {
+      "name": "Skyshot",
+      "tagline": "Elevate Your Vision. Capture the Extraordinary.",
+      "description": "Skyshot delivers stunning aerial photography and creative visuals that bring your ideas to life."
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Get the latest news, tips, and exclusive offers",
+      "placeholder": "Enter your email address",
+      "success": "Thank you for subscribing!",
+      "privacy": "We respect your privacy and never share your email."
+    },
+    "currentTime": "Current Time (Riyadh)",
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "gallery": "Gallery",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Our Services",
+      "photography": "Photography",
+      "videography": "Videography",
+      "aerial": "Aerial Shots",
+      "events": "Event Coverage",
+      "commercial": "Commercial",
+      "editing": "Post Production"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "address": "Riyadh, Saudi Arabia",
+      "phone": "+966 55 060 3007",
+      "email": "CEO@skyshot.sa",
+      "workingHours": "Sun - Thu: 9 AM - 6 PM"
+    },
+    "social": {
+      "title": "Follow Us",
+      "followUs": "Stay connected on social media"
+    },
+    "legal": {
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "All rights reserved by Skyshot 2025",
+    "fromConceptToSky": "From concept to sky – we capture it all."
+  }
+}

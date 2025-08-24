@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Photography Blog",
+    "subtitle": "Tips, tutorials, and insights from our professional photographers",
+    "description": "Stay updated with the latest photography techniques, industry trends, and behind-the-scenes stories from our team."
+  },
+  "categories": {
+    "all": "All Posts",
+    "techniques": "Photography Techniques",
+    "equipment": "Equipment Reviews",
+    "locations": "Best Locations",
+    "tutorials": "Tutorials",
+    "industry": "Industry News",
+    "behind-scenes": "Behind the Scenes"
+  },
+  "filters": {
+    "category": "Filter by Category",
+    "date": "Filter by Date",
+    "author": "Filter by Author",
+    "tags": "Filter by Tags"
+  },
+  "post": {
+    "readMore": "Read More",
+    "readTime": "{{minutes}} min read",
+    "publishedOn": "Published on",
+    "author": "By {{name}}",
+    "tags": "Tags",
+    "share": "Share this post",
+    "relatedPosts": "Related Posts",
+    "comments": "Comments",
+    "leaveComment": "Leave a Comment"
+  },
+  "search": {
+    "placeholder": "Search blog posts...",
+    "results": "Search Results",
+    "noResults": "No posts found matching your search.",
+    "showingResults": "Showing {{count}} results for \"{{query}}\""
+  },
+  "newsletter": {
+    "title": "Subscribe to Our Blog",
+    "subtitle": "Get the latest photography tips and tutorials delivered to your inbox",
+    "placeholder": "Enter your email address",
+    "subscribe": "Subscribe",
+    "success": "Successfully subscribed to our blog!",
+    "benefits": [
+      "Weekly photography tips",
+      "Exclusive tutorials",
+      "Industry insights",
+      "Equipment recommendations"
+    ]
+  },
+  "sidebar": {
+    "recentPosts": "Recent Posts",
+    "popularPosts": "Popular Posts",
+    "categories": "Categories",
+    "tags": "Popular Tags",
+    "archive": "Archive"
+  },
+  "comments": {
+    "title": "Comments ({{count}})",
+    "noComments": "No comments yet. Be the first to comment!",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "website": "Website (Optional)",
+      "comment": "Your Comment",
+      "submit": "Post Comment",
+      "submitting": "Posting...",
+      "success": "Comment posted successfully!",
+      "error": "Error posting comment. Please try again."
+    },
+    "reply": "Reply",
+    "edit": "Edit",
+    "delete": "Delete",
+    "report": "Report"
+  }
+}

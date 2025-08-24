@@ -1,0 +1,79 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "consultation": "Consultation",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "getStarted": "Get Started",
+    "startBusiness": "Start my Business",
+    "navigation": "Navigation",
+    "followUs": "Follow Us"
+  },
+  "footer": {
+    "company": "Company",
+    "services": "Services",
+    "support": "Support",
+    "legal": "Legal",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "subscribe": "Subscribe",
+    "allRightsReserved": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "loading": "Loading...",
+    "tryAgain": "Try Again",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "bookNow": "Book Now",
+    "contactUs": "Contact Us"
+  },
+  "forms": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "subject": "Subject",
+    "required": "Required",
+    "optional": "Optional",
+    "invalidEmail": "Invalid email address",
+    "fieldRequired": "This field is required",
+    "success": "Success!",
+    "error": "Error occurred",
+    "sending": "Sending...",
+    "sent": "Sent successfully"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "العربية",
+    "switchTo": "Switch to {{language}}"
+  },
+  "time": {
+    "minutes": "minutes",
+    "hours": "hours",
+    "days": "days",
+    "weeks": "weeks",
+    "months": "months",
+    "years": "years",
+    "ago": "ago",
+    "readTime": "{{time}} min read"
+  }
+}

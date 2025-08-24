@@ -1,0 +1,61 @@
+{
+  "privacy": {
+    "hero": {
+      "title": "Privacy Policy",
+      "subtitle": "We respect your privacy and are committed to protecting your personal information. Learn how we collect, use, and safeguard your data.",
+      "lastUpdated": "Last updated: December 2024"
+    },
+    "introduction": {
+      "title": "Our Commitment to Your Privacy",
+      "content": "At Vision Studio, we specialize in aerial photography, commercial photography, and video production. We are committed to maintaining the confidentiality of your personal information and protecting it from any unauthorized use. Whether you visit our website, book a service, or contact us, rest assured that your data is secure."
+    },
+    "sections": {
+      "dataCollection": {
+        "title": "Information We Collect",
+        "items": [
+          "Name, email address, phone number, and project details",
+          "Files, images, or documents you send during communication or booking",
+          "Indirect information such as IP address and browser type (via cookies)"
+        ]
+      },
+      "dataUsage": {
+        "title": "How We Use Your Information",
+        "items": [
+          "To confirm bookings and provide services accurately and professionally",
+          "To respond to your inquiries and provide technical support",
+          "To send promotional offers or discount notifications (only with your consent)"
+        ]
+      },
+      "dataSharing": {
+        "title": "Information Sharing",
+        "items": [
+          "We never sell or share your data with third parties",
+          "Exceptions include payment processors or delivery services when necessary for service provision",
+          "Legal requirements under official or legal orders"
+        ],
+        "important": "We never sell your personal information to third parties."
+      },
+      "dataSecurity": {
+        "title": "Data Protection",
+        "items": [
+          "We implement technical and administrative security measures",
+          "Your information is protected from unauthorized access, use, or modification",
+          "We use industry-standard encryption and security protocols"
+        ]
+      },
+      "consent": {
+        "title": "Your Consent",
+        "items": [
+          "By using this website or sending personal data through it, you agree to this privacy policy",
+          "You consent to our use of your information as outlined above",
+          "You can withdraw your consent at any time by contacting us"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Questions About Privacy?",
+      "subtitle": "If you have any questions about our privacy policy, don't hesitate to contact us.",
+      "address": "Riyadh, Saudi Arabia"
+    }
+  }
+}

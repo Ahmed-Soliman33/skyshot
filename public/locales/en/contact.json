@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch for your photography needs",
+    "description": "Ready to capture stunning visuals? Contact our team today to discuss your project requirements and get a personalized quote."
+  },
+  "contactInfo": {
+    "title": "Get in Touch",
+    "subtitle": "Multiple ways to reach us",
+    "phone": {
+      "title": "Phone",
+      "number": "+966 11 234 5678",
+      "availability": "9 AM - 6 PM, Sunday to Thursday"
+    },
+    "email": {
+      "title": "Email",
+      "address": "info@skyshot.sa",
+      "response": "We respond within 2-4 hours"
+    },
+    "address": {
+      "title": "Office",
+      "street": "King Fahd Road, Al Olaya District",
+      "city": "Riyadh 12211, Saudi Arabia"
+    },
+    "social": {
+      "title": "Follow Us",
+      "instagram": "@skyshot.sa",
+      "twitter": "@skyshot_sa",
+      "linkedin": "Skyshot Photography"
+    }
+  },
+  "contactForm": {
+    "title": "Send us a Message",
+    "subtitle": "Fill out the form below and we'll get back to you soon",
+    "fields": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company (Optional)",
+      "serviceType": "Service Type",
+      "budget": "Budget Range",
+      "projectDate": "Project Date",
+      "location": "Project Location",
+      "message": "Project Details",
+      "urgency": "Urgency Level"
+    },
+    "serviceTypes": [
+      { "value": "aerial", "label": "Aerial Drone Photography" },
+      { "value": "ground", "label": "Ground Photography" },
+      { "value": "events", "label": "Event Photography" },
+      { "value": "commercial", "label": "Commercial Photography" },
+      { "value": "editing", "label": "Editing & Post-Production" },
+      { "value": "consultation", "label": "Free Consultation" },
+      { "value": "other", "label": "Other" }
+    ],
+    "budgetRanges": [
+      { "value": "500-1000", "label": "500 - 1,000 SAR" },
+      { "value": "1000-2500", "label": "1,000 - 2,500 SAR" },
+      { "value": "2500-5000", "label": "2,500 - 5,000 SAR" },
+      { "value": "5000+", "label": "5,000+ SAR" },
+      { "value": "discuss", "label": "Let's Discuss" }
+    ],
+    "urgencyLevels": [
+      { "value": "low", "label": "No Rush (2+ weeks)" },
+      { "value": "medium", "label": "Standard (1-2 weeks)" },
+      { "value": "high", "label": "Urgent (Within 1 week)" },
+      { "value": "emergency", "label": "Emergency (ASAP)" }
+    ],
+    "submitButton": "Send Message",
+    "submitting": "Sending...",
+    "success": {
+      "title": "Message Sent Successfully!",
+      "message": "Thank you for contacting us. We'll review your request and get back to you within 24 hours with a detailed response."
+    },
+    "error": {
+      "title": "Error Sending Message",
+      "message": "Sorry, there was an error sending your message. Please try again or contact us directly."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers to common questions",
+    "questions": [
+      {
+        "question": "How quickly can you respond to inquiries?",
+        "answer": "We typically respond to all inquiries within 2-4 hours during business hours (9 AM - 6 PM, Sunday to Thursday). For urgent requests, please call us directly."
+      },
+      {
+        "question": "Do you provide free consultations?",
+        "answer": "Yes, we offer free consultations to discuss your project requirements, provide recommendations, and give you a detailed quote."
+      },
+      {
+        "question": "What information should I include in my inquiry?",
+        "answer": "Please include your project type, preferred dates, location, budget range, and any specific requirements. The more details you provide, the better we can assist you."
+      },
+      {
+        "question": "Do you travel outside Riyadh?",
+        "answer": "Yes, we provide services throughout Saudi Arabia. Travel costs may apply for locations outside Riyadh, which will be included in your quote."
+      }
+    ]
+  },
+  "map": {
+    "title": "Find Us",
+    "subtitle": "Visit our office in Riyadh",
+    "directions": "Get Directions",
+    "parking": "Free parking available"
+  },
+  "hours": {
+    "title": "Business Hours",
+    "weekdays": "Sunday - Thursday: 9:00 AM - 6:00 PM",
+    "weekend": "Friday - Saturday: Closed",
+    "note": "Emergency services available 24/7"
+  }
+}

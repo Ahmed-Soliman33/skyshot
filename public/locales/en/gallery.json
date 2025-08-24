@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Our Gallery",
+    "subtitle": "Explore our portfolio of stunning aerial and ground photography",
+    "description": "Browse through our collection of professional photography work showcasing the beauty of Saudi Arabia from unique perspectives."
+  },
+
+  "gallery": {
+    "subtitle": "Our Portfolio",
+    "title": "Featured Photos",
+    "titleHighlight": "& Videos",
+    "featured": "Featured",
+    "preview": "Quick Preview",
+    "description": "Explore a curated selection of our finest aerial photography work from various cities across Saudi Arabia. Each image and video tells a unique story from the sky.",
+    "locations": {
+      "all": "All Cities",
+      "riyadh": "Riyadh",
+      "jeddah": "Jeddah",
+      "dammam": "Dammam",
+      "mecca": "Mecca",
+      "medina": "Medina",
+      "tabuk": "Tabuk",
+      "abha": "Abha",
+      "khobar": "Khobar"
+    },
+    "items": {
+      "1": {
+        "title": "Modern Riyadh Skyline"
+      },
+      "2": {
+        "title": "Magical Jeddah Corniche"
+      },
+      "3": {
+        "title": "Dammam Commercial Port"
+      },
+      "4": {
+        "title": "Holy Mosque in Mecca"
+      },
+      "5": {
+        "title": "Prophet's Mosque in Medina"
+      },
+      "6": {
+        "title": "Majestic Tabuk Mountains"
+      },
+      "7": {
+        "title": "Green Terraces of Abha"
+      },
+      "8": {
+        "title": "Golden Beaches of Khobar"
+      }
+    },
+    "cta": {
+      "title": "Ready to Explore More?",
+      "description": "Browse our complete collection and discover hundreds of high-quality photos and videos from across the Kingdom",
+      "visitStore": "Browse Store"
+    }
+  }
+}

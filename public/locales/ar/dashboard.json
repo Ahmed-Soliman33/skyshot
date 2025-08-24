@@ -1,0 +1,117 @@
+{
+  "title": "لوحة التحكم الرئيسية",
+  "overview": "نظرة عامة",
+  "welcome": "مرحباً",
+  "statistics": "الإحصائيات",
+  "recentActivity": "النشاط الحديث",
+  "quickActions": "الإجراءات السريعة",
+  "navigation": {
+    "dashboard": "لوحة التحكم",
+    "contentManagement": "إدارة المحتوى",
+    "userManagement": "إدارة المستخدمين",
+    "orders": "الطلبات",
+    "settings": "الإعدادات",
+    "notifications": "الإشعارات",
+    "logout": "تسجيل الخروج",
+    "pages": "الصفحات",
+    "blog": "المدونة",
+    "media": "الوسائط",
+    "services": "الخدمات",
+    "testimonials": "آراء العملاء",
+    "faqs": "الأسئلة الشائعة",
+    "admins": "المديرين",
+    "customers": "العملاء",
+    "purchases": "المشتريات"
+  },
+  "stats": {
+    "totalUsers": "إجمالي المستخدمين",
+    "totalSales": "إجمالي المبيعات",
+    "totalOrders": "إجمالي الطلبات",
+    "siteVisits": "زيارات الموقع",
+    "revenue": "الإيرادات",
+    "growth": "النمو",
+    "thisMonth": "هذا الشهر",
+    "lastMonth": "الشهر الماضي",
+    "increase": "زيادة",
+    "decrease": "انخفاض"
+  },
+  "charts": {
+    "salesOverview": "نظرة عامة على المبيعات",
+    "ordersChart": "مخطط الطلبات",
+    "userGrowth": "نمو المستخدمين",
+    "revenueChart": "مخطط الإيرادات"
+  },
+  "tables": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "role": "الدور",
+    "status": "الحالة",
+    "date": "التاريخ",
+    "amount": "المبلغ",
+    "actions": "الإجراءات",
+    "orderId": "رقم الطلب",
+    "customer": "العميل",
+    "product": "المنتج",
+    "total": "الإجمالي",
+    "noData": "لا توجد بيانات متاحة"
+  },
+  "actions": {
+    "create": "إنشاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "view": "عرض",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "search": "بحث",
+    "filter": "تصفية",
+    "export": "تصدير",
+    "upload": "رفع",
+    "markAsRead": "وضع علامة مقروء",
+    "markAllAsRead": "وضع علامة مقروء للكل"
+  },
+  "forms": {
+    "siteName": "اسم الموقع",
+    "siteDescription": "وصف الموقع",
+    "contactInfo": "معلومات الاتصال",
+    "metaTitle": "عنوان الميتا",
+    "metaDescription": "وصف الميتا",
+    "keywords": "الكلمات المفتاحية",
+    "tiktokPixel": "بكسل تيك توك",
+    "snapPixel": "بكسل سناب",
+    "generalSettings": "الإعدادات العامة",
+    "seoSettings": "إعدادات السيو",
+    "integrations": "التكاملات"
+  },
+  "messages": {
+    "deleteConfirm": "هل أنت متأكد من حذف هذا العنصر؟",
+    "saveSuccess": "تم الحفظ بنجاح",
+    "deleteSuccess": "تم الحذف بنجاح",
+    "updateSuccess": "تم التحديث بنجاح",
+    "createSuccess": "تم الإنشاء بنجاح",
+    "errorOccurred": "حدث خطأ"
+  },
+  "search": {
+    "placeholder": "البحث في لوحة التحكم...",
+    "noResults": "لم يتم العثور على نتائج"
+  },
+  "profile": {
+    "welcome": "مرحباً",
+    "account": "الحساب",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "role": "الدور",
+    "status": "الحالة",
+    "lastLogin": "آخر تسجيل دخول",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "language": "اللغة",
+    "changeLanguage": "تغيير اللغة",
+    "roles": {
+      "master": "مدير عام",
+      "admin": "مشرف",
+      "user": "مستخدم",
+      "partner": "شريك"
+    }
+  }
+}

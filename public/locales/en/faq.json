@@ -1,0 +1,51 @@
+{
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find quick answers to the most common questions about our services",
+    "stillHaveQuestions": "Still Have Questions?",
+    "stillHaveQuestionsDesc": "Still have questions? Feel free to get in touch with us today!",
+    "askQuestion": "Ask A Question",
+    "questions": [
+      {
+        "id": 1,
+        "question": "How can I book a photography session?",
+        "answer": "You can book by contacting us directly through the website or via WhatsApp. We'll discuss the details with you and send you a booking confirmation within a short time."
+      },
+      {
+        "id": 2,
+        "question": "Do you provide aerial photography in all cities?",
+        "answer": "Yes, we provide aerial photography in most cities, but some areas may require additional permits according to local regulations. We help you verify these before shooting."
+      },
+      {
+        "id": 3,
+        "question": "How long does it take to deliver photos or videos after the session?",
+        "answer": "Usually photos are delivered within 3 to 5 business days, and videos within 7 to 10 days, depending on the project size and type of editing required."
+      },
+      {
+        "id": 4,
+        "question": "Can I request revisions after delivery?",
+        "answer": "Absolutely! We provide a certain number of free revisions according to the package, and if you need additional revisions, they can be calculated with nominal fees."
+      },
+      {
+        "id": 5,
+        "question": "Do you have ready photography packages or do you design custom ones?",
+        "answer": "We offer ready packages that suit most needs, but we can design a special package according to your idea and budget."
+      },
+      {
+        "id": 6,
+        "question": "Do I need to pay an advance for booking?",
+        "answer": "Yes, a deposit is paid to confirm the booking (usually 30% of the service value), and the rest upon delivery or before the shooting day."
+      },
+      {
+        "id": 7,
+        "question": "What type of equipment do you use?",
+        "answer": "We use professional equipment from the latest cameras and drones, and we always ensure image, sound, and lighting quality in every project."
+      },
+      {
+        "id": 8,
+        "question": "Do you provide event photography or just personal sessions?",
+        "answer": "We cover all types of photography: personal sessions, event photography, real estate, products, marketing content, and more."
+      }
+    ]
+  }
+}

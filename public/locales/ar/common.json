@@ -1,0 +1,79 @@
+{
+  "header": {
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "gallery": "المعرض",
+    "blog": "المدونة",
+    "consultation": "الاستشارة",
+    "about": "حولنا",
+    "contact": "اتصل بنا",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "dashboard": "لوحة التحكم",
+    "getStarted": "ابدأ الآن",
+    "startBusiness": "ابدأ عملي",
+    "navigation": "التنقل",
+    "followUs": "تابعنا"
+  },
+  "footer": {
+    "company": "الشركة",
+    "services": "الخدمات",
+    "support": "الدعم",
+    "legal": "قانوني",
+    "followUs": "تابعنا",
+    "newsletter": "النشرة الإخبارية",
+    "subscribe": "اشترك",
+    "allRightsReserved": "جميع الحقوق محفوظة",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة"
+  },
+  "buttons": {
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "confirm": "تأكيد",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "close": "إغلاق",
+    "loading": "جاري التحميل...",
+    "tryAgain": "حاول مرة أخرى",
+    "learnMore": "اعرف المزيد",
+    "readMore": "اقرأ المزيد",
+    "viewAll": "عرض الكل",
+    "bookNow": "احجز الآن",
+    "contactUs": "اتصل بنا"
+  },
+  "forms": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "message": "الرسالة",
+    "subject": "الموضوع",
+    "required": "مطلوب",
+    "optional": "اختياري",
+    "invalidEmail": "عنوان بريد إلكتروني غير صحيح",
+    "fieldRequired": "هذا الحقل مطلوب",
+    "success": "نجح!",
+    "error": "حدث خطأ",
+    "sending": "جاري الإرسال...",
+    "sent": "تم الإرسال بنجاح"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "العربية",
+    "switchTo": "التبديل إلى {{language}}"
+  },
+  "time": {
+    "minutes": "دقائق",
+    "hours": "ساعات",
+    "days": "أيام",
+    "weeks": "أسابيع",
+    "months": "أشهر",
+    "years": "سنوات",
+    "ago": "منذ",
+    "readTime": "{{time}} دقيقة قراءة"
+  }
+}

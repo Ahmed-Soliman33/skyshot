@@ -1,0 +1,159 @@
+{
+  "hero": {
+    "title": "Our Services",
+    "subtitle": "Professional photography solutions for every need",
+    "description": "From aerial drone photography to ground-based shoots, we offer comprehensive photography services tailored to your specific requirements."
+  },
+  "landingSection": {
+    "title": "Our Services",
+    "subtitle": "Photography solutions for every need",
+    "description": "We offer a wide range of professional photography services, including aerial drone photography, ground-based photography, event and wedding photography, commercial and real estate photography, as well as editing and post-production services.",
+    "cta": "Launch Your Vision",
+    "stats": {
+      "projects": "projects",
+      "clients": "clients",
+      "videos": "videos",
+      "duration": "duration",
+      "events": "events",
+      "cameras": "cameras",
+      "streaming": "streaming",
+      "photos": "photos",
+      "months": "months",
+      "coverage": "coverage",
+      "resolution": "resolution"
+    }
+  },
+  "services": [
+    {
+      "id": "aerial",
+      "title": "Aerial Drone Photography",
+      "description": "Capture stunning aerial perspectives with our professional drone services",
+      "features": [
+        "4K Ultra HD video recording",
+        "High-resolution photography",
+        "Licensed and insured operations",
+        "Professional editing included"
+      ],
+      "pricing": {
+        "basic": "Starting from 800 SAR",
+        "premium": "Starting from 1500 SAR",
+        "enterprise": "Custom pricing"
+      }
+    },
+    {
+      "id": "ground",
+      "title": "Ground Photography",
+      "description": "Professional ground-based photography for various occasions",
+      "features": [
+        "Portrait photography",
+        "Landscape photography",
+        "Product photography",
+        "Professional lighting setup"
+      ],
+      "pricing": {
+        "basic": "Starting from 500 SAR",
+        "premium": "Starting from 1000 SAR",
+        "enterprise": "Custom pricing"
+      }
+    },
+    {
+      "id": "events",
+      "title": "Event Photography",
+      "description": "Capture your special moments with our event photography services",
+      "features": [
+        "Wedding photography",
+        "Corporate events",
+        "Private celebrations",
+        "Same-day preview available"
+      ],
+      "pricing": {
+        "basic": "Starting from 1200 SAR",
+        "premium": "Starting from 2500 SAR",
+        "enterprise": "Custom pricing"
+      }
+    },
+    {
+      "id": "commercial",
+      "title": "Commercial Photography",
+      "description": "Professional photography solutions for businesses and marketing",
+      "features": [
+        "Real estate photography",
+        "Construction progress documentation",
+        "Marketing and advertising content",
+        "Brand photography"
+      ],
+      "pricing": {
+        "basic": "Starting from 1000 SAR",
+        "premium": "Starting from 2000 SAR",
+        "enterprise": "Custom pricing"
+      }
+    },
+    {
+      "id": "editing",
+      "title": "Editing & Post-Production",
+      "description": "Professional editing services to enhance your visual content",
+      "features": [
+        "Color correction and grading",
+        "Video editing and montage",
+        "Photo retouching",
+        "Custom graphics and animations"
+      ],
+      "pricing": {
+        "basic": "Starting from 300 SAR",
+        "premium": "Starting from 600 SAR",
+        "enterprise": "Custom pricing"
+      }
+    }
+  ],
+  "process": {
+    "title": "Our Process",
+    "subtitle": "How we work with you from concept to delivery",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Consultation",
+        "description": "We discuss your requirements and provide a customized quote"
+      },
+      {
+        "step": 2,
+        "title": "Planning",
+        "description": "We plan the shoot details, locations, and timeline"
+      },
+      {
+        "step": 3,
+        "title": "Shooting",
+        "description": "Professional photography session with our expert team"
+      },
+      {
+        "step": 4,
+        "title": "Editing",
+        "description": "Post-production and editing to perfect your content"
+      },
+      {
+        "step": 5,
+        "title": "Delivery",
+        "description": "Final delivery of high-quality edited content"
+      }
+    ]
+  },
+  "tabs": {
+    "services": {
+      "aerial": {
+        "title": "Aerial Photography",
+        "description": "Stunning high-resolution drone shots from above — ideal for landscapes, real estate, and industrial projects."
+      },
+      "commercial": {
+        "title": "Project Documentation",
+        "description": "End-to-end photo and video documentation of construction or development projects, from foundation to delivery."
+      },
+      "editing": {
+        "title": "Video Production",
+        "description": "Full video production service — cinematic drone footage, editing, branding, and storytelling for any purpose."
+      },
+      "events": {
+        "title": "Event Coverage",
+        "description": "Seamless drone and camera coverage of weddings, corporate events, sports, and cultural celebrations."
+      }
+    }
+  }
+}

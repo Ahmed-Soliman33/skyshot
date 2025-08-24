@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title": "About Skyshot",
+    "subtitle": "Your trusted partner for professional aerial photography",
+    "description": "Founded in the heart of Saudi Arabia, we specialize in capturing breathtaking aerial and ground photography with cutting-edge technology and artistic vision."
+  },
+  "story": {
+    "title": "Our Story",
+    "content": "Skyshot was born from a passion for capturing the beauty of Saudi Arabia from unique perspectives. Our journey began with a simple vision: to provide premium aerial photography services that showcase the Kingdom's stunning landscapes, architectural marvels, and cultural heritage.",
+    "mission": "Our mission is to deliver exceptional visual content that tells compelling stories and creates lasting memories for our clients.",
+    "vision": "To be the leading aerial photography service in Saudi Arabia, known for innovation, quality, and customer satisfaction."
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "Professional photographers and certified drone pilots",
+    "members": [
+      {
+        "name": "Ahmed Al-Rashid",
+        "position": "Lead Photographer & Founder",
+        "experience": "8 years",
+        "specialization": "Aerial Photography"
+      },
+      {
+        "name": "Sarah Al-Mahmoud",
+        "position": "Creative Director",
+        "experience": "6 years",
+        "specialization": "Event Photography"
+      },
+      {
+        "name": "Omar Al-Zahrani",
+        "position": "Drone Pilot",
+        "experience": "5 years",
+        "specialization": "Commercial Projects"
+      }
+    ]
+  },
+  "values": {
+    "title": "Our Values",
+    "items": [
+      {
+        "title": "Quality Excellence",
+        "description": "We never compromise on quality, delivering exceptional results that exceed expectations."
+      },
+      {
+        "title": "Innovation",
+        "description": "We embrace the latest technology and techniques to stay ahead in the industry."
+      },
+      {
+        "title": "Customer Focus",
+        "description": "Our clients' satisfaction is our top priority, and we go above and beyond to meet their needs."
+      },
+      {
+        "title": "Safety First",
+        "description": "We maintain the highest safety standards in all our operations and equipment."
+      }
+    ]
+  },
+  "achievements": {
+    "title": "Our Achievements",
+    "stats": [
+      { "number": "500+", "label": "Projects Completed" },
+      { "number": "50+", "label": "Happy Clients" },
+      { "number": "5", "label": "Years Experience" },
+      { "number": "100%", "label": "Client Satisfaction" }
+    ]
+  },
+  "aboutSection": {
+    "badge": "About Us",
+    "title": "We transform your ideas",
+    "titleHighlight": "into unforgettable visuals",
+    "description": "Offering premium aerial and visual content services, we blend creativity with technology to tell your story from a unique perspective that captures your vision with precision and impact.",
+    "cta": "View Our Work",
+    "features": {
+      "tech": "Advanced Technology",
+      "creativity": "Unlimited Creativity",
+      "passion": "True Passion",
+      "quality": "High Quality"
+    },
+    "stats": {
+      "projects": "Projects Completed",
+      "clients": "Happy Clients",
+      "years": "Years Experience",
+      "cities": "Cities Covered"
+    }
+  }
+}

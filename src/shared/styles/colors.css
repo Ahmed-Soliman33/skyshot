@@ -1,0 +1,325 @@
+/* SkyShot Color Variables */
+:root {
+  --color-primaryColor: #212529;
+  --color-secondaryColor: #343a40;
+  --color-tertiaryColor: #032747;
+  --color-darkBlueColor: #001d3d;
+  --color-primaryTextColor: #fff;
+  --color-secondaryTextColor: #6a7282;
+}
+
+/* Global CSS Variables for consistent theming */
+:root {
+  /* Primary Colors */
+  --primary: var(--color-primaryColor);
+  --primary-foreground: var(--color-primaryTextColor);
+  
+  /* Secondary Colors */
+  --secondary: var(--color-secondaryColor);
+  --secondary-foreground: var(--color-primaryTextColor);
+  
+  /* Accent Colors */
+  --accent: var(--color-tertiaryColor);
+  --accent-foreground: var(--color-primaryTextColor);
+  
+  /* Muted Colors */
+  --muted: #f8f9fa;
+  --muted-foreground: var(--color-secondaryTextColor);
+  
+  /* Background Colors */
+  --background: #ffffff;
+  --foreground: var(--color-primaryColor);
+  
+  /* Card Colors */
+  --card: #ffffff;
+  --card-foreground: var(--color-primaryColor);
+  
+  /* Border Colors */
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  
+  /* Ring Colors */
+  --ring: var(--color-tertiaryColor);
+  
+  /* Destructive Colors */
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-primaryColor);
+    --foreground: var(--color-primaryTextColor);
+    --card: var(--color-secondaryColor);
+    --card-foreground: var(--color-primaryTextColor);
+    --muted: var(--color-secondaryColor);
+    --border: #374151;
+    --input: #374151;
+  }
+}
+
+/* Utility classes for SkyShot colors */
+.text-primary-color {
+  color: var(--color-primaryColor);
+}
+
+.text-secondary-color {
+  color: var(--color-secondaryColor);
+}
+
+.text-tertiary-color {
+  color: var(--color-tertiaryColor);
+}
+
+.text-dark-blue-color {
+  color: var(--color-darkBlueColor);
+}
+
+.text-primary-text-color {
+  color: var(--color-primaryTextColor);
+}
+
+.text-secondary-text-color {
+  color: var(--color-secondaryTextColor);
+}
+
+.bg-primary-color {
+  background-color: var(--color-primaryColor);
+}
+
+.bg-secondary-color {
+  background-color: var(--color-secondaryColor);
+}
+
+.bg-tertiary-color {
+  background-color: var(--color-tertiaryColor);
+}
+
+.bg-dark-blue-color {
+  background-color: var(--color-darkBlueColor);
+}
+
+.border-primary-color {
+  border-color: var(--color-primaryColor);
+}
+
+.border-secondary-color {
+  border-color: var(--color-secondaryColor);
+}
+
+.border-tertiary-color {
+  border-color: var(--color-tertiaryColor);
+}
+
+.border-dark-blue-color {
+  border-color: var(--color-darkBlueColor);
+}
+
+/* Gradient utilities */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-tertiaryColor), var(--color-darkBlueColor));
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, var(--color-primaryColor), var(--color-secondaryColor));
+}
+
+.gradient-tertiary {
+  background: linear-gradient(135deg, var(--color-secondaryColor), var(--color-tertiaryColor));
+}
+
+/* Button styles */
+.btn-primary {
+  background: var(--color-tertiaryColor);
+  color: var(--color-primaryTextColor);
+  border: 1px solid var(--color-tertiaryColor);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-darkBlueColor);
+  border-color: var(--color-darkBlueColor);
+}
+
+.btn-secondary {
+  background: var(--color-secondaryColor);
+  color: var(--color-primaryTextColor);
+  border: 1px solid var(--color-secondaryColor);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-primaryColor);
+  border-color: var(--color-primaryColor);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-tertiaryColor);
+  border: 1px solid var(--color-tertiaryColor);
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: var(--color-tertiaryColor);
+  color: var(--color-primaryTextColor);
+}
+
+/* Focus styles */
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring:focus {
+  outline: 2px solid var(--color-tertiaryColor);
+  outline-offset: 2px;
+}
+
+/* Shadow utilities */
+.shadow-primary {
+  box-shadow: 0 4px 6px -1px rgba(3, 39, 71, 0.1), 0 2px 4px -1px rgba(3, 39, 71, 0.06);
+}
+
+.shadow-secondary {
+  box-shadow: 0 10px 15px -3px rgba(3, 39, 71, 0.1), 0 4px 6px -2px rgba(3, 39, 71, 0.05);
+}
+
+.shadow-tertiary {
+  box-shadow: 0 20px 25px -5px rgba(3, 39, 71, 0.1), 0 10px 10px -5px rgba(3, 39, 71, 0.04);
+}
+
+/* Animation utilities */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .rtl\:text-right {
+  text-align: right;
+}
+
+[dir="rtl"] .rtl\:text-left {
+  text-align: left;
+}
+
+[dir="rtl"] .rtl\:mr-auto {
+  margin-right: auto;
+}
+
+[dir="rtl"] .rtl\:ml-auto {
+  margin-left: auto;
+}
+
+[dir="rtl"] .rtl\:pr-4 {
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .rtl\:pl-4 {
+  padding-left: 1rem;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .mobile\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .mobile\:p-4 {
+    padding: 1rem;
+  }
+  
+  .mobile\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tablet\:block {
+    display: block;
+  }
+  
+  .tablet\:flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop\:grid {
+    display: grid;
+  }
+  
+  .desktop\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .desktop\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .desktop\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
