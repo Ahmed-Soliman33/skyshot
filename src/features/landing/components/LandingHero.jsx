@@ -1,14 +1,14 @@
 import { useRef } from "react";
 
 import LoadingScreen from "@components/loading/LoadingScreen";
-// import useLoading from "@hooks/useLoading";
+import useLoading from "@hooks/useLoading";
 
 const DroneHero = () => {
   const videoRef = useRef(null);
-  // const isLoading = useLoading(videoRef);
+  const { isLoading } = useLoading(videoRef);
   return (
     <>
-      {/* <LoadingScreen isLoading={isLoading} /> */}
+      <LoadingScreen isLoading={isLoading} />
       <section className="relative min-h-screen overflow-hidden">
         {/* Fullscreen Video Background */}
         <div className="absolute inset-0 z-0">
