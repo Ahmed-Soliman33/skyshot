@@ -9,12 +9,21 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primaryColor: #212529;
-  --color-secondaryColor: #343a40;
-  --color-tertiaryColor: #032747;
-  --color-darkBlueColor: #001d3d;
-  --color-primaryTextColor: #fff;
-  --color-secondaryTextColor: #6a7282;
+  /* Professional Aerial Photography Color Palette */
+  --color-primaryColor: #1a1d23;
+  --color-secondaryColor: #2c3e50;
+  --color-tertiaryColor: #0f4c75;
+  --color-darkBlueColor: #003366;
+  --color-primaryTextColor: #ffffff;
+  --color-secondaryTextColor: #8892b0;
+
+  /* Accent Colors */
+  --color-skyBlue: #60a5fa;
+  --color-cloudWhite: #f8fafc;
+  --color-horizonGray: #64748b;
+  --color-sunsetGold: #fbbf24;
+
+  /* Status Colors */
   --color-yellowColor: #ffd60a;
   --color-greenColor: #2ecc71;
   --color-redColor: #e74c3c;

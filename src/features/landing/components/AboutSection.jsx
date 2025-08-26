@@ -130,16 +130,16 @@ const AboutSection = () => {
 
       <motion.div
         className="relative mx-auto max-w-7xl"
-        // style={{ y: contentY }}
+        style={{ y: contentY }}
       >
         {/* Hero */}
         <div className="grid min-h-[80vh] items-center gap-16 lg:grid-cols-2">
           {/* Left Content */}
           <motion.div
-            // initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
-            // whileInView={{ opacity: 1, x: 0 }}
-            // viewport={{ once: true }}
-            // transition={{ duration: 0.8, ease: "easeOut" }}
+            initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="space-y-8"
           >
             <div className="text-start">
@@ -167,9 +167,9 @@ const AboutSection = () => {
                   backgroundClip: "text",
                   color: "transparent",
                 }}
-                // initial={{ opacity: 0, y: 30 }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // transition={{ delay: 0.3, duration: 0.8 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
               >
                 {t("aboutSection.title")}
                 <motion.span
@@ -183,9 +183,9 @@ const AboutSection = () => {
                     backgroundClip: "text",
                     color: "transparent",
                   }}
-                  // initial={{ opacity: 0 }}
-                  // whileInView={{ opacity: 0.9 }}
-                  // transition={{ delay: 0.6 }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 0.9 }}
+                  transition={{ delay: 0.6 }}
                 >
                   {t("aboutSection.titleHighlight")}
                 </motion.span>
@@ -214,16 +214,16 @@ const AboutSection = () => {
                 borderColor: "var(--color-primaryTextColor)40",
                 backgroundColor: "var(--color-primaryTextColor)05",
               }}
-              // whileTap={{ scale: 0.98 }}
-              // initial={{ opacity: 0, y: 20 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // transition={{ delay: 0.7 }}
+              whileTap={{ scale: 0.98 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
             >
               <HiPlay className="h-5 w-5 opacity-70" />
               {t("aboutSection.cta")}
               <motion.div
-              // animate={{ x: [0, 3, 0] }}
-              // transition={{ duration: 3, repeat: Infinity }}
+              animate={{ x: [0, 3, 0] }}
+              transition={{ duration: 3, repeat: Infinity }}
               >
                 <HiArrowRight className="h-5 w-5 opacity-70" />
               </motion.div>
@@ -232,10 +232,10 @@ const AboutSection = () => {
 
           {/* Enhanced Modern Circular Visual */}
           <motion.div
-            // initial={{ opacity: 0, x: isRTL ? -50 : 50 }}
-            // whileInView={{ opacity: 1, x: 0 }}
-            // viewport={{ once: true }}
-            // transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0, x: isRTL ? -50 : 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex w-full items-center justify-center"
           >
             {/* Main Circular Container with Glassmorphism */}

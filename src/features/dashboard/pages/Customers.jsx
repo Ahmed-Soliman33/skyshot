@@ -419,7 +419,7 @@ const Customers = () => {
                   <div
                     className={`flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
                       index === 0
-                        ? "bg-yellow-100 text-yellow-800"
+                        ? "bg-[#032747] text-white"
                         : index === 1
                           ? "bg-gray-100 text-gray-800"
                           : "bg-orange-100 text-orange-800"

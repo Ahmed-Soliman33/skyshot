@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "اتصل بنا",
-    "subtitle": "تواصل معنا لاحتياجات التصوير الخاصة بك",
+    "title": "تواصل معنا",
+    "subtitle": "نسعد بخدمتكم دائمًا",
     "description": "مستعد لالتقاط صور مذهلة؟ تواصل مع فريقنا اليوم لمناقشة متطلبات مشروعك والحصول على عرض سعر شخصي."
   },
   "contactInfo": {
@@ -9,12 +9,12 @@
     "subtitle": "طرق متعددة للوصول إلينا",
     "phone": {
       "title": "الهاتف",
-      "number": "+966 11 234 5678",
-      "availability": "9 صباحاً - 6 مساءً، الأحد إلى الخميس"
+      "number": " 3007 060 55 966+",
+      "availability": "9 صباحاً - 8 مساءً، السبت إلى الخميس"
     },
     "email": {
       "title": "البريد الإلكتروني",
-      "address": "info@skyshot.sa",
+      "address": "CEO@skyshot.sa",
       "response": "نرد خلال 2-4 ساعات"
     },
     "address": {
@@ -24,9 +24,26 @@
     },
     "social": {
       "title": "تابعنا",
-      "instagram": "@skyshot.sa",
-      "twitter": "@skyshot_sa",
-      "linkedin": "Skyshot Photography"
+      "tiktok": {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@skyshot.sa"
+      },
+      "snapchat": {
+        "label": "Snapchat",
+        "url": "https://t.snapchat.com/4Xy8kdXQ"
+      },
+      "facebook": {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/share/14zoJsCLHj/?mibextid=wwXIfr"
+      },
+      "instagram": {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/skyshot.sa"
+      },
+      "youtube": {
+        "label": "YouTube",
+        "url": "https://youtube.com/@skyshot_sa"
+      }
     }
   },
   "contactForm": {
@@ -107,8 +124,13 @@
   },
   "hours": {
     "title": "ساعات العمل",
-    "weekdays": "الأحد - الخميس: 9:00 صباحاً - 6:00 مساءً",
-    "weekend": "الجمعة - السبت: مغلق",
+    "weekdays": "السبت - الخميس: 9:00 صباحاً - 8:00 مساءً",
+    "weekend": "الجمعة: مغلق",
     "note": "خدمات الطوارئ متاحة 24/7"
+  },
+  "cta": {
+    "title": "هل أنت مستعد لتوثيق مشروعك؟",
+    "subtitle": "دعنا نحول رؤيتك إلى واقع مذهل",
+    "button": "ابدأ مشروعك الآن"
   }
 }

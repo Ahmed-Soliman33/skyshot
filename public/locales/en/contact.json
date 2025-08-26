@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Contact Us",
-    "subtitle": "Get in touch for your photography needs",
+    "subtitle": "We're here to help",
     "description": "Ready to capture stunning visuals? Contact our team today to discuss your project requirements and get a personalized quote."
   },
   "contactInfo": {
@@ -9,12 +9,12 @@
     "subtitle": "Multiple ways to reach us",
     "phone": {
       "title": "Phone",
-      "number": "+966 11 234 5678",
-      "availability": "9 AM - 6 PM, Sunday to Thursday"
+      "number": "+966 55 060 3007",
+      "availability": "9 AM - 8 PM, Saturday to Thursday"
     },
     "email": {
       "title": "Email",
-      "address": "info@skyshot.sa",
+      "address": "CEO@skyshot.sa",
       "response": "We respond within 2-4 hours"
     },
     "address": {
@@ -24,9 +24,26 @@
     },
     "social": {
       "title": "Follow Us",
-      "instagram": "@skyshot.sa",
-      "twitter": "@skyshot_sa",
-      "linkedin": "Skyshot Photography"
+      "tiktok": {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@skyshot.sa"
+      },
+      "snapchat": {
+        "label": "Snapchat",
+        "url": "https://t.snapchat.com/4Xy8kdXQ"
+      },
+      "facebook": {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/share/14zoJsCLHj/?mibextid=wwXIfr"
+      },
+      "instagram": {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/skyshot.sa"
+      },
+      "youtube": {
+        "label": "YouTube",
+        "url": "https://youtube.com/@skyshot_sa"
+      }
     }
   },
   "contactForm": {
@@ -107,8 +124,13 @@
   },
   "hours": {
     "title": "Business Hours",
-    "weekdays": "Sunday - Thursday: 9:00 AM - 6:00 PM",
-    "weekend": "Friday - Saturday: Closed",
+    "weekdays": "Saturday - Thursday: 9:00 AM - 8:00 PM",
+    "weekend": "Friday: Closed",
     "note": "Emergency services available 24/7"
+  },
+  "cta": {
+    "title": "Ready to capture your vision?",
+    "subtitle": "Let us turn your ideas into stunning reality",
+    "button": "Start Your Project Now"
   }
 }

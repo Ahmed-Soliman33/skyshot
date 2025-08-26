@@ -1,77 +1,109 @@
 {
+  "title": "Blog",
+  "subtitle": "Discover the art of aerial storytelling",
+  "description": "Explore our latest insights, behind-the-scenes stories, and creative inspiration from the world of premium drone photography and videography.",
   "hero": {
-    "title": "Photography Blog",
-    "subtitle": "Tips, tutorials, and insights from our professional photographers",
-    "description": "Stay updated with the latest photography techniques, industry trends, and behind-the-scenes stories from our team."
+    "title": "Skyshot Stories",
+    "subtitle": "Where creativity meets the sky",
+    "description": "Dive into the world of aerial artistry with exclusive insights, tutorials, and breathtaking stories from above.",
+    "featuredContent": "Featured Content",
+    "latestStories": "Latest Stories"
   },
-  "categories": {
-    "all": "All Posts",
-    "techniques": "Photography Techniques",
-    "equipment": "Equipment Reviews",
-    "locations": "Best Locations",
-    "tutorials": "Tutorials",
-    "industry": "Industry News",
-    "behind-scenes": "Behind the Scenes"
+  "search": {
+    "placeholder": "Search articles...",
+    "noResults": "No articles found",
+    "resultsCount": "{{count}} articles found",
+    "searchResults": "Search Results",
+    "showingResults": "Showing {{count}} results for \"{{query}}\""
   },
   "filters": {
-    "category": "Filter by Category",
-    "date": "Filter by Date",
-    "author": "Filter by Author",
-    "tags": "Filter by Tags"
+    "all": "All",
+    "latest": "Latest",
+    "popular": "Most Popular",
+    "sortBy": "Sort by",
+    "filterBy": "Filter by Category",
+    "activeFilters": "Active filters",
+    "sortLatest": "Sort by Latest",
+    "showingLatest": "Showing latest articles",
+    "categories": {
+      "photography": "Aerial Photography",
+      "videography": "Drone Videography",
+      "tutorials": "Tutorials & Tips",
+      "behind-scenes": "Behind the Scenes",
+      "equipment": "Equipment & Tech",
+      "locations": "Epic Locations",
+      "client-stories": "Client Stories",
+      "industry-news": "Industry Insights"
+    }
   },
   "post": {
     "readMore": "Read More",
     "readTime": "{{minutes}} min read",
     "publishedOn": "Published on",
+    "by": "By",
     "author": "By {{name}}",
+    "category": "Category",
     "tags": "Tags",
-    "share": "Share this post",
-    "relatedPosts": "Related Posts",
-    "comments": "Comments",
-    "leaveComment": "Leave a Comment"
-  },
-  "search": {
-    "placeholder": "Search blog posts...",
-    "results": "Search Results",
-    "noResults": "No posts found matching your search.",
-    "showingResults": "Showing {{count}} results for \"{{query}}\""
-  },
-  "newsletter": {
-    "title": "Subscribe to Our Blog",
-    "subtitle": "Get the latest photography tips and tutorials delivered to your inbox",
-    "placeholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "success": "Successfully subscribed to our blog!",
-    "benefits": [
-      "Weekly photography tips",
-      "Exclusive tutorials",
-      "Industry insights",
-      "Equipment recommendations"
-    ]
-  },
-  "sidebar": {
-    "recentPosts": "Recent Posts",
-    "popularPosts": "Popular Posts",
-    "categories": "Categories",
-    "tags": "Popular Tags",
-    "archive": "Archive"
+    "share": "Share",
+    "relatedPosts": "Related Articles",
+    "backToBlog": "Back to Blog",
+    "nextPost": "Next Article",
+    "previousPost": "Previous Article",
+    "likes": "{{count}} likes",
+    "likesCount": "{{count}}",
+    "commentsCount": "{{count}}",
+    "publishedDate": "Published {{date}}",
+    "authorInfo": "Written by {{author}}",
+    "postDetails": "Post Details",
+    "engagement": "Engagement",
+    "viewDetails": "View Details",
+    "hideDetails": "Hide Details"
   },
   "comments": {
-    "title": "Comments ({{count}})",
-    "noComments": "No comments yet. Be the first to comment!",
+    "title": "Comments",
+    "count": "{{count}} Comments",
+    "noComments": "No comments yet. Be the first to share your thoughts!",
+    "writeComment": "Write a comment...",
+    "post": "Post Comment",
+    "reply": "Reply",
+    "like": "Like",
+    "edit": "Edit",
+    "delete": "Delete",
+    "showReplies": "Show {{count}} replies",
+    "hideReplies": "Hide replies",
+    "loginToComment": "Please log in to comment",
+    "commentPosted": "Comment posted successfully",
+    "commentDeleted": "Comment deleted",
+    "confirmDelete": "Are you sure you want to delete this comment?",
     "form": {
       "name": "Your Name",
       "email": "Email Address",
-      "website": "Website (Optional)",
       "comment": "Your Comment",
       "submit": "Post Comment",
       "submitting": "Posting...",
       "success": "Comment posted successfully!",
       "error": "Error posting comment. Please try again."
-    },
-    "reply": "Reply",
-    "edit": "Edit",
-    "delete": "Delete",
-    "report": "Report"
+    }
+  },
+  "social": {
+    "shareOn": "Share on {{platform}}",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link copied to clipboard!",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
+  "navigation": {
+    "home": "Home",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "meta": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "noMorePosts": "No more posts to load",
+    "loadMore": "Load More Articles"
   }
 }

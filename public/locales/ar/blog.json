@@ -1,77 +1,109 @@
 {
+  "title": "المدونة",
+  "subtitle": "اكتشف فن السرد الجوي",
+  "description": "استكشف أحدث رؤانا وقصص ما وراء الكواليس والإلهام الإبداعي من عالم التصوير والفيديو الجوي المتميز.",
   "hero": {
-    "title": "مدونة التصوير",
-    "subtitle": "نصائح ودروس ورؤى من مصورينا المحترفين",
-    "description": "ابق محدثاً بأحدث تقنيات التصوير واتجاهات الصناعة وقصص من وراء الكواليس من فريقنا."
+    "title": "قصص سكاي شوت",
+    "subtitle": "حيث يلتقي الإبداع بالسماء",
+    "description": "انغمس في عالم الفن الجوي مع رؤى حصرية ودروس وقصص خلابة من الأعلى.",
+    "featuredContent": "المحتوى المميز",
+    "latestStories": "أحدث القصص"
   },
-  "categories": {
-    "all": "جميع المقالات",
-    "techniques": "تقنيات التصوير",
-    "equipment": "مراجعات المعدات",
-    "locations": "أفضل المواقع",
-    "tutorials": "الدروس",
-    "industry": "أخبار الصناعة",
-    "behind-scenes": "من وراء الكواليس"
+  "search": {
+    "placeholder": "البحث في المقالات...",
+    "noResults": "لم يتم العثور على مقالات",
+    "resultsCount": "تم العثور على {{count}} مقالة",
+    "searchResults": "نتائج البحث",
+    "showingResults": "عرض {{count}} نتيجة لـ \"{{query}}\""
   },
   "filters": {
-    "category": "تصفية حسب الفئة",
-    "date": "تصفية حسب التاريخ",
-    "author": "تصفية حسب الكاتب",
-    "tags": "تصفية حسب العلامات"
+    "all": "الكل",
+    "latest": "الأحدث",
+    "popular": "الأكثر شعبية",
+    "sortBy": "ترتيب حسب",
+    "filterBy": "تصفية حسب الفئة",
+    "activeFilters": "الفلاتر النشطة",
+    "sortLatest": "ترتيب حسب الأحدث",
+    "showingLatest": "عرض أحدث المقالات",
+    "categories": {
+      "photography": "التصوير الجوي",
+      "videography": "الفيديو الجوي",
+      "tutorials": "دروس ونصائح",
+      "behind-scenes": "من وراء الكواليس",
+      "equipment": "المعدات والتقنيات",
+      "locations": "مواقع ملحمية",
+      "client-stories": "قصص العملاء",
+      "industry-news": "رؤى الصناعة"
+    }
   },
   "post": {
     "readMore": "اقرأ المزيد",
     "readTime": "{{minutes}} دقيقة قراءة",
     "publishedOn": "نُشر في",
+    "by": "بواسطة",
     "author": "بواسطة {{name}}",
+    "category": "الفئة",
     "tags": "العلامات",
-    "share": "شارك هذا المقال",
+    "share": "مشاركة",
     "relatedPosts": "مقالات ذات صلة",
-    "comments": "التعليقات",
-    "leaveComment": "اترك تعليقاً"
-  },
-  "search": {
-    "placeholder": "البحث في مقالات المدونة...",
-    "results": "نتائج البحث",
-    "noResults": "لم يتم العثور على مقالات تطابق بحثك.",
-    "showingResults": "عرض {{count}} نتيجة لـ \"{{query}}\""
-  },
-  "newsletter": {
-    "title": "اشترك في مدونتنا",
-    "subtitle": "احصل على أحدث نصائح التصوير والدروس في صندوق بريدك",
-    "placeholder": "أدخل عنوان بريدك الإلكتروني",
-    "subscribe": "اشترك",
-    "success": "تم الاشتراك في مدونتنا بنجاح!",
-    "benefits": [
-      "نصائح تصوير أسبوعية",
-      "دروس حصرية",
-      "رؤى الصناعة",
-      "توصيات المعدات"
-    ]
-  },
-  "sidebar": {
-    "recentPosts": "المقالات الحديثة",
-    "popularPosts": "المقالات الشائعة",
-    "categories": "الفئات",
-    "tags": "العلامات الشائعة",
-    "archive": "الأرشيف"
+    "backToBlog": "العودة للمدونة",
+    "nextPost": "المقال التالي",
+    "previousPost": "المقال السابق",
+    "likes": "{{count}} إعجاب",
+    "likesCount": "{{count}}",
+    "commentsCount": "{{count}}",
+    "publishedDate": "نُشر في {{date}}",
+    "authorInfo": "كتبه {{author}}",
+    "postDetails": "تفاصيل المقال",
+    "engagement": "التفاعل",
+    "viewDetails": "عرض التفاصيل",
+    "hideDetails": "إخفاء التفاصيل"
   },
   "comments": {
-    "title": "التعليقات ({{count}})",
-    "noComments": "لا توجد تعليقات بعد. كن أول من يعلق!",
+    "title": "التعليقات",
+    "count": "{{count}} تعليق",
+    "noComments": "لا توجد تعليقات بعد. كن أول من يشارك أفكاره!",
+    "writeComment": "اكتب تعليقاً...",
+    "post": "نشر التعليق",
+    "reply": "رد",
+    "like": "إعجاب",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "showReplies": "عرض {{count}} ردود",
+    "hideReplies": "إخفاء الردود",
+    "loginToComment": "يرجى تسجيل الدخول للتعليق",
+    "commentPosted": "تم نشر التعليق بنجاح",
+    "commentDeleted": "تم حذف التعليق",
+    "confirmDelete": "هل أنت متأكد من حذف هذا التعليق؟",
     "form": {
       "name": "اسمك",
       "email": "عنوان البريد الإلكتروني",
-      "website": "الموقع الإلكتروني (اختياري)",
       "comment": "تعليقك",
       "submit": "نشر التعليق",
       "submitting": "جاري النشر...",
       "success": "تم نشر التعليق بنجاح!",
       "error": "خطأ في نشر التعليق. يرجى المحاولة مرة أخرى."
-    },
-    "reply": "رد",
-    "edit": "تعديل",
-    "delete": "حذف",
-    "report": "إبلاغ"
+    }
+  },
+  "social": {
+    "shareOn": "مشاركة على {{platform}}",
+    "copyLink": "نسخ الرابط",
+    "linkCopied": "تم نسخ الرابط!",
+    "facebook": "فيسبوك",
+    "twitter": "تويتر",
+    "linkedin": "لينكد إن",
+    "instagram": "إنستغرام"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "meta": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "retry": "حاول مرة أخرى",
+    "noMorePosts": "لا توجد مقالات أخرى للتحميل",
+    "loadMore": "تحميل المزيد من المقالات"
   }
 }

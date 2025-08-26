@@ -4,7 +4,29 @@
     "subtitle": "Explore our portfolio of stunning aerial and ground photography",
     "description": "Browse through our collection of professional photography work showcasing the beauty of Saudi Arabia from unique perspectives."
   },
-
+  "filters": {
+    "all": "All",
+    "photos": "Photos",
+    "videos": "Videos",
+    "images": "Images",
+    "sortBy": "Sort by",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "popular": "Most Popular",
+    "priceLowToHigh": "Price: Low to High",
+    "priceHighToLow": "Price: High to Low",
+    "featured": "Featured First",
+    "searchPlaceholder": "Search gallery...",
+    "filterBy": "Filter by",
+    "location": "Location",
+    "category": "Category",
+    "priceRange": "Price Range",
+    "clearFilters": "Clear Filters",
+    "showFilters": "Show Filters",
+    "hideFilters": "Hide Filters",
+    "allLocations": "All Locations",
+    "allCategories": "All Categories"
+  },
   "gallery": {
     "subtitle": "Our Portfolio",
     "title": "Featured Photos",
@@ -54,5 +76,45 @@
       "description": "Browse our complete collection and discover hundreds of high-quality photos and videos from across the Kingdom",
       "visitStore": "Browse Store"
     }
+  },
+  "mediaViewer": {
+    "download": "Download",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "loginRequired": "Login Required",
+    "loginMessage": "Please login to download high-quality media",
+    "loginButton": "Login Now",
+    "paymentRequired": "Premium Content",
+    "paymentMessage": "This is premium content. Purchase to download in full quality.",
+    "purchaseButton": "Purchase Now",
+    "downloading": "Downloading...",
+    "downloadComplete": "Download Complete",
+    "downloadError": "Download Failed",
+    "retryDownload": "Retry Download",
+    "price": "Price",
+    "location": "Location",
+    "datePublished": "Date Published",
+    "resolution": "Resolution",
+    "category": "Category",
+    "premium": "Premium",
+    "featured": "Featured",
+    "viewFullSize": "View Full Size",
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "loginToAccess": "Login to Access",
+    "loginToPurchase": "Login to Purchase"
+  },
+  "stats": {
+    "totalItems": "Total Items",
+    "photos": "Photos",
+    "videos": "Videos",
+    "downloads": "Downloads"
+  },
+  "loading": {
+    "loadingGallery": "Loading Gallery...",
+    "loadingMore": "Loading More...",
+    "noResults": "No results found",
+    "tryDifferentFilter": "Try a different filter or search term"
   }
 }

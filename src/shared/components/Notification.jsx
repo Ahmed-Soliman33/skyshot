@@ -71,11 +71,11 @@ const Notification = ({
         };
       case 'warning':
         return {
-          bg: 'bg-yellow-50',
-          border: 'border-yellow-200',
-          icon: 'text-yellow-600',
-          title: 'text-yellow-800',
-          message: 'text-yellow-700'
+          bg: 'bg-orange-50',
+          border: 'border-orange-200',
+          icon: 'text-orange-600',
+          title: 'text-orange-800',
+          message: 'text-orange-700'
         };
       case 'info':
       default:

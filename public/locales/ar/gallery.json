@@ -4,7 +4,29 @@
     "subtitle": "استكشف مجموعة أعمالنا من التصوير الجوي والأرضي المذهل",
     "description": "تصفح مجموعتنا من أعمال التصوير الاحترافية التي تُظهر جمال المملكة العربية السعودية من زوايا فريدة."
   },
-
+  "filters": {
+    "all": "الكل",
+    "photos": "الصور",
+    "videos": "الفيديوهات",
+    "images": "الصور",
+    "sortBy": "ترتيب حسب",
+    "newest": "الأحدث",
+    "oldest": "الأقدم",
+    "popular": "الأكثر شعبية",
+    "priceLowToHigh": "السعر: من الأقل للأعلى",
+    "priceHighToLow": "السعر: من الأعلى للأقل",
+    "featured": "المميز أولاً",
+    "searchPlaceholder": "البحث في المعرض...",
+    "filterBy": "تصفية حسب",
+    "location": "الموقع",
+    "category": "الفئة",
+    "priceRange": "نطاق السعر",
+    "clearFilters": "مسح المرشحات",
+    "showFilters": "إظهار المرشحات",
+    "hideFilters": "إخفاء المرشحات",
+    "allLocations": "جميع المواقع",
+    "allCategories": "جميع الفئات"
+  },
   "gallery": {
     "subtitle": "معرض أعمالنا",
     "title": "صور وفيديوهات",
@@ -54,5 +76,45 @@
       "description": "تصفح مجموعتنا الكاملة واكتشف المئات من الصور والفيديوهات عالية الجودة من جميع أنحاء المملكة",
       "visitStore": "تصفح المتجر"
     }
+  },
+  "mediaViewer": {
+    "download": "تحميل",
+    "close": "إغلاق",
+    "previous": "السابق",
+    "next": "التالي",
+    "loginRequired": "تسجيل الدخول مطلوب",
+    "loginMessage": "يرجى تسجيل الدخول لتحميل الوسائط عالية الجودة",
+    "loginButton": "تسجيل الدخول الآن",
+    "paymentRequired": "محتوى مميز",
+    "paymentMessage": "هذا محتوى مميز. قم بالشراء للتحميل بجودة كاملة.",
+    "purchaseButton": "شراء الآن",
+    "downloading": "جاري التحميل...",
+    "downloadComplete": "اكتمل التحميل",
+    "downloadError": "فشل التحميل",
+    "retryDownload": "إعادة المحاولة",
+    "price": "السعر",
+    "location": "الموقع",
+    "datePublished": "تاريخ النشر",
+    "resolution": "الدقة",
+    "category": "الفئة",
+    "premium": "مميز",
+    "featured": "مُختار",
+    "viewFullSize": "عرض بالحجم الكامل",
+    "addToCart": "إضافة للسلة",
+    "buyNow": "شراء الآن",
+    "loginToAccess": "تسجيل الدخول للوصول",
+    "loginToPurchase": "تسجيل الدخول للشراء"
+  },
+  "stats": {
+    "totalItems": "إجمالي العناصر",
+    "photos": "الصور",
+    "videos": "الفيديوهات",
+    "downloads": "التحميلات"
+  },
+  "loading": {
+    "loadingGallery": "جاري تحميل المعرض...",
+    "loadingMore": "جاري تحميل المزيد...",
+    "noResults": "لا توجد نتائج",
+    "tryDifferentFilter": "جرب مرشح أو مصطلح بحث مختلف"
   }
 }

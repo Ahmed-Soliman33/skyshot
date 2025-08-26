@@ -11,7 +11,7 @@ import {
 import { PageNotFound } from "@features/404";
 import Services from "@features/services/pages/Services";
 import Gallery from "@features/gallery/pages/Gallery";
-import Blog from "@features/blog/pages/Blog";
+import { Blog, BlogPost } from "@features/blog/pages";
 
 // Auth imports
 import {
@@ -36,6 +36,7 @@ const router = createBrowserRouter([
       { path: "services", element: <Services /> },
       { path: "gallery", element: <Gallery /> },
       { path: "blog", element: <Blog /> },
+      { path: "blog/:id", element: <BlogPost /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
       { path: "consultation", element: <Consultation /> },

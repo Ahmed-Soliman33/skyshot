@@ -141,7 +141,7 @@ const Orders = () => {
       case "processing":
         return "text-blue-600 bg-blue-100";
       case "pending":
-        return "text-yellow-600 bg-yellow-100";
+        return "text-orange-600 bg-orange-100";
       case "cancelled":
         return "text-red-600 bg-red-100";
       default:
@@ -169,7 +169,7 @@ const Orders = () => {
       case "paid":
         return "text-green-600 bg-green-100";
       case "pending":
-        return "text-yellow-600 bg-yellow-100";
+        return "text-orange-600 bg-orange-100";
       case "refunded":
         return "text-red-600 bg-red-100";
       case "failed":
