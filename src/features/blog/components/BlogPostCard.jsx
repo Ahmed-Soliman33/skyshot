@@ -115,7 +115,7 @@ const BlogPostCard = ({ post, index, onLike, isLiked }) => {
           className="absolute top-6 left-6 rtl:left-auto rtl:right-6"
         >
           <span
-            className="inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold shadow-lg backdrop-blur-sm"
+            className="inline-flex items-center rounded-full px-3 py-1.5  md:px-4 md:py-2 text-[.85rem] sm:text-sm font-semibold shadow-lg backdrop-blur-sm"
             style={{
               background: `linear-gradient(135deg,
                 var(--color-tertiaryColor, #032747) 0%,
@@ -133,7 +133,7 @@ const BlogPostCard = ({ post, index, onLike, isLiked }) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => onLike(post.id)}
-          className="absolute top-6 right-6 rtl:right-auto rtl:left-6 rounded-full p-3 backdrop-blur-sm transition-all duration-300"
+          className="absolute top-6 right-6 rtl:right-auto rtl:left-6 rounded-full p-2 leading-1 md:p-3 backdrop-blur-sm transition-all duration-300"
           style={{
             background: "rgba(33, 37, 41, 0.7)",
             border: "1px solid rgba(96, 165, 250, 0.2)"
@@ -144,9 +144,9 @@ const BlogPostCard = ({ post, index, onLike, isLiked }) => {
             transition={{ duration: 0.3 }}
           >
             {isLiked ? (
-              <FaHeart className="h-5 w-5 text-red-400" />
+              <FaHeart className="h-4 w-4 md:h-5 md:w-5 text-red-400" />
             ) : (
-              <FiHeart className="h-5 w-5" style={{ color: "var(--color-primaryTextColor, #fff)" }} />
+              <FiHeart className="h-4 w-4 md:h-5 md:w-5" style={{ color: "var(--color-primaryTextColor, #fff)" }} />
             )}
           </motion.div>
         </motion.button>
@@ -158,7 +158,7 @@ const BlogPostCard = ({ post, index, onLike, isLiked }) => {
       <div className="p-4 sm:p-6">
         {/* Title */}
         <h3
-          className="mb-3 text-lg sm:text-xl font-bold transition-colors duration-300 leading-tight group-hover:text-blue-400 line-clamp-2"
+          className="mb-3 text-lg sm:text-xl font-bold transition-colors duration-300 leading-tight group-hover:text-blue-400 line-clamp-2 text-[.85rem] sm:text-base"
           style={{ color: "var(--color-primaryTextColor, #fff)" }}
         >
           {post.title}
@@ -166,14 +166,14 @@ const BlogPostCard = ({ post, index, onLike, isLiked }) => {
 
         {/* Excerpt */}
         <p
-          className="mb-4 leading-relaxed line-clamp-2 text-sm"
+          className="mb-4 leading-relaxed line-clamp-2 text-[.85rem] sm:text-sm"
           style={{ color: "var(--color-secondaryTextColor, #94a3b8)" }}
         >
           {post.excerpt}
         </p>
 
         {/* Basic Meta Information */}
-        <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs" style={{ color: "var(--color-secondaryTextColor, #64748b)" }}>
+        <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-[.85rem] sm:text-sm" style={{ color: "var(--color-secondaryTextColor, #64748b)" }}>
           <div className="flex items-center gap-2">
             <FiClock className="h-3 w-3 text-blue-400" />
             <span>{t("post.readTime", { minutes: post.readTime })}</span>

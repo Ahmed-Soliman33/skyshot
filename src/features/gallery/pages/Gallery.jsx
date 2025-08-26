@@ -577,7 +577,7 @@ const Gallery = () => {
                       </div>
 
                       {/* Action Buttons */}
-                      <div className="flex items-center gap-2">
+                      <div className="md:flex hidden items-center gap-2">
                         <motion.button
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
@@ -614,192 +614,191 @@ const Gallery = () => {
       </div>
 
       {/* Enhanced Lightbox Modal */}
-      <AnimatePresence>
-        {selectedItem && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md"
-            onClick={() => setSelectedItem(null)}
-          >
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0, y: 50 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.8, opacity: 0, y: 50 }}
-              className="relative max-w-6xl w-full bg-gradient-to-br from-[var(--color-secondaryColor)] to-[var(--color-primaryColor)] rounded-3xl overflow-hidden shadow-2xl border border-[var(--color-primaryTextColor)]/10"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Close Button */}
+    <AnimatePresence>
+  {selectedItem && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/50 backdrop-blur-md"
+      onClick={() => setSelectedItem(null)}
+    >
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0, y: 50 }}
+        animate={{ scale: 1, opacity: 1, y: 0 }}
+        exit={{ scale: 0.8, opacity: 0, y: 50 }}
+        className="relative max-h-[95vh] max-w-7xl w-full bg-gradient-to-br from-[var(--color-secondaryColor)] to-[var(--color-primaryColor)] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-[var(--color-primaryTextColor)]/10"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close Button */}
+        <motion.button
+          whileHover={{ scale: 1.1, rotate: 90 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => setSelectedItem(null)}
+          className="absolute top-2 right-2 sm:top-4 sm:right-4 z-20 p-2 sm:p-3 bg-black/50 backdrop-blur-sm rounded-full text-[var(--color-primaryTextColor)] hover:bg-black/70 transition-all duration-200"
+        >
+          <X className="w-5 h-5 sm:w-6 sm:h-6" />
+        </motion.button>
+
+        {/* Premium/Featured Badges */}
+        <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-20 flex gap-1 sm:gap-2">
+          {selectedItem.premium && (
+            <div className="bg-gradient-to-r from-[var(--color-sunsetGold)] to-[var(--color-yellowColor)] text-[var(--color-primaryColor)] px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold">
+              {t("mediaViewer.premium")}
+            </div>
+          )}
+          {selectedItem.featured && (
+            <div className="bg-[var(--color-tertiaryColor)] text-[var(--color-primaryTextColor)] px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-medium">
+              ⭐ {t("mediaViewer.featured")}
+            </div>
+          )}
+        </div>
+
+        <div className="flex flex-col lg:flex-row max-h-[95vh]">
+          {/* Media Preview */}
+          <div className="lg:w-2/3 relative flex-shrink-0 min-h-0">
+            {selectedItem.type === 'video' ? (
+              <div className="h-[35vh] sm:h-[45vh] lg:h-[85vh] flex items-center justify-center">
+                <video
+                  controls
+                  className="w-full h-full object-contain"
+                  poster={selectedItem.thumbnail}
+                  autoPlay={false}
+                >
+                  <source src={selectedItem.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            ) : (
+              <div className="h-[35vh] sm:h-[45vh] lg:h-[85vh] flex items-center justify-center">
+                <img
+                  src={selectedItem.src}
+                  alt={selectedItem.title[lang]}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            )}
+          </div>
+
+          {/* Enhanced Item Details */}
+          <div className="lg:w-1/3 p-3 sm:p-4 lg:p-6 flex flex-col bg-gradient-to-b from-[var(--color-secondaryColor)]/50 to-[var(--color-primaryColor)]/50 backdrop-blur-sm min-h-0">
+            {/* Type Badge */}
+            <div className="flex items-center gap-2 mb-3 sm:mb-4">
+              {selectedItem.type === 'video' ? (
+                <Video className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-tertiaryColor)]" />
+              ) : (
+                <Camera className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-tertiaryColor)]" />
+              )}
+              <span className="text-[var(--color-tertiaryColor)] font-semibold text-sm sm:text-base">
+                {selectedItem.type === 'video' ? t("filters.videos") : t("filters.images")}
+              </span>
+            </div>
+
+            {/* Title */}
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[var(--color-primaryTextColor)] mb-2 sm:mb-3 leading-tight">
+              {selectedItem.title[lang]}
+            </h2>
+
+            {/* Description - Compact */}
+            <p className="text-[var(--color-primaryTextColor)]/80 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed line-clamp-2">
+              {selectedItem.description[lang]}
+            </p>
+
+            {/* Details Grid - Compact */}
+            <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6 flex-shrink-0">
+              <div className="flex items-center justify-between py-1.5 border-b border-[var(--color-primaryTextColor)]/10">
+                <span className="text-[var(--color-primaryTextColor)]/60 flex items-center gap-1.5 text-xs sm:text-sm">
+                  <MapPin className="w-3 h-3" />
+                  {t("mediaViewer.location")}
+                </span>
+                <span className="text-[var(--color-primaryTextColor)] font-medium text-xs sm:text-sm">
+                  {selectedItem.location[lang]}
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between py-1.5 border-b border-[var(--color-primaryTextColor)]/10">
+                <span className="text-[var(--color-primaryTextColor)]/60 flex items-center gap-1.5 text-xs sm:text-sm">
+                  <Filter className="w-3 h-3" />
+                  {t("mediaViewer.category")}
+                </span>
+                <span className="text-[var(--color-primaryTextColor)] font-medium text-xs sm:text-sm">
+                  {selectedItem.category[lang]}
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between py-1.5 border-b border-[var(--color-primaryTextColor)]/10">
+                <span className="text-[var(--color-primaryTextColor)]/60 flex items-center gap-1.5 text-xs sm:text-sm">
+                  <Calendar className="w-3 h-3" />
+                  {t("mediaViewer.datePublished")}
+                </span>
+                <span className="text-[var(--color-primaryTextColor)] font-medium text-xs sm:text-sm">
+                  {new Date(selectedItem.datePublished).toLocaleDateString(lang === 'ar' ? 'ar-SA' : 'en-US')}
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between py-1.5 border-b border-[var(--color-primaryTextColor)]/10">
+                <span className="text-[var(--color-primaryTextColor)]/60 text-xs sm:text-sm">
+                  {t("mediaViewer.resolution")}
+                </span>
+                <span className="text-[var(--color-primaryTextColor)] font-medium text-xs sm:text-sm">
+                  {selectedItem.resolution}
+                </span>
+              </div>
+
+              {/* Price Display */}
+              <div className="flex items-center justify-between py-2 sm:py-3 bg-gradient-to-r from-[var(--color-tertiaryColor)]/20 to-[var(--color-darkBlueColor)]/20 rounded-lg px-3">
+                <span className="text-[var(--color-primaryTextColor)]/80 flex items-center gap-1.5 text-xs sm:text-sm">
+                  <DollarSign className="w-3 h-3 sm:w-4 sm:h-4" />
+                  {t("mediaViewer.price")}
+                </span>
+                <span className="text-[var(--color-sunsetGold)] font-bold text-base sm:text-lg">
+                  {selectedItem.price} {selectedItem.currency}
+                </span>
+              </div>
+            </div>
+
+            {/* Action Buttons - Compact */}
+            <div className="space-y-2 mt-auto flex-shrink-0">
               <motion.button
-                whileHover={{ scale: 1.1, rotate: 90 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setSelectedItem(null)}
-                className="absolute top-4 right-4 z-20 p-3 bg-black/50 backdrop-blur-sm rounded-full text-[var(--color-primaryTextColor)] hover:bg-black/70 transition-all duration-200"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => handlePurchase(selectedItem)}
+                className="w-full py-2.5 sm:py-3 px-4 rounded-lg font-bold text-sm sm:text-base text-amber-950 transition-all duration-300 flex items-center justify-center gap-2"
+                style={{ backgroundColor: "#fbbf24" }}
               >
-                <X className="w-6 h-6" />
+                <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4" />
+                {t("mediaViewer.buyNow")}
               </motion.button>
 
-              {/* Premium/Featured Badges */}
-              <div className="absolute top-4 left-4 z-20 flex gap-2">
-                {selectedItem.premium && (
-                  <div className="bg-gradient-to-r from-[var(--color-sunsetGold)] to-[var(--color-yellowColor)] text-[var(--color-primaryColor)] px-3 py-1 rounded-full text-sm font-bold">
-                    {t("mediaViewer.premium")}
-                  </div>
-                )}
-                {selectedItem.featured && (
-                  <div className="bg-[var(--color-tertiaryColor)] text-[var(--color-primaryTextColor)] px-3 py-1 rounded-full text-sm font-medium">
-                    ⭐ {t("mediaViewer.featured")}
-                  </div>
-                )}
+              <div className="flex gap-2">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => handleViewFullscreen(selectedItem)}
+                  className="flex-1 py-2 sm:py-2.5 px-3 rounded-lg font-semibold text-white transition-all duration-300 flex items-center justify-center gap-1.5 text-xs sm:text-sm"
+                  style={{ backgroundColor: "var(--color-tertiaryColor, #032747)" }}
+                >
+                  <Eye className="w-3 h-3" />
+                  {t("mediaViewer.viewFullSize")}
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => handleAddToCart(selectedItem)}
+                  className="flex-1 py-2 sm:py-2.5 px-3 rounded-lg font-semibold text-white border border-gray-600 hover:border-blue-400 transition-all duration-300 flex items-center justify-center gap-1.5 text-xs sm:text-sm"
+                >
+                  <ShoppingCart className="w-3 h-3" />
+                  {t("mediaViewer.addToCart")}
+                </motion.button>
               </div>
-
-              <div className="flex flex-col items-center lg:flex-row min-h-[70vh]">
-                {/* Media Preview */}
-                <div className="lg:w-2/3 relative ">
-                  {selectedItem.type === 'video' ? (
-                    <div className="aspect-video  flex items-center justify-center">
-                      <video
-                        controls
-                        className="w-full h-full"
-                        poster={selectedItem.thumbnail}
-                        autoPlay={false}
-                      >
-                        <source src={selectedItem.src} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  ) : (
-                    <div className="aspect-[4/3] lg:aspect-video relative">
-                      <img
-                        src={selectedItem.src}
-                        alt={selectedItem.title[lang]}
-                        className="w-full object-contain"
-                      />
-                    
-                    </div>
-                  )}
-                </div>
-
-                {/* Enhanced Item Details */}
-                <div className="lg:w-1/3 p-8 flex flex-col bg-gradient-to-b from-[var(--color-secondaryColor)]/50 to-[var(--color-primaryColor)]/50 backdrop-blur-sm">
-                  {/* Type Badge */}
-                  <div className="flex items-center gap-2 mb-6">
-                    {selectedItem.type === 'video' ? (
-                      <Video className="w-6 h-6 text-[var(--color-tertiaryColor)]" />
-                    ) : (
-                      <Camera className="w-6 h-6 text-[var(--color-tertiaryColor)]" />
-                    )}
-                    <span className="text-[var(--color-tertiaryColor)] font-semibold text-lg">
-                      {selectedItem.type === 'video' ? t("filters.videos") : t("filters.images")}
-                    </span>
-                  </div>
-
-                  {/* Title */}
-                  <h2 className="text-3xl font-bold text-[var(--color-primaryTextColor)] mb-4 leading-tight">
-                    {selectedItem.title[lang]}
-                  </h2>
-
-                  {/* Description */}
-                  <p className="text-[var(--color-primaryTextColor)]/80 mb-6 flex-grow leading-relaxed">
-                    {selectedItem.description[lang]}
-                  </p>
-
-                  {/* Details Grid */}
-                  <div className="space-y-4 mb-8">
-                    <div className="flex items-center justify-between py-2 border-b border-[var(--color-primaryTextColor)]/10">
-                      <span className="text-[var(--color-primaryTextColor)]/60 flex items-center gap-2">
-                        <MapPin className="w-4 h-4" />
-                        {t("mediaViewer.location")}
-                      </span>
-                      <span className="text-[var(--color-primaryTextColor)] font-medium">
-                        {selectedItem.location[lang]}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center justify-between py-2 border-b border-[var(--color-primaryTextColor)]/10">
-                      <span className="text-[var(--color-primaryTextColor)]/60 flex items-center gap-2">
-                        <Filter className="w-4 h-4" />
-                        {t("mediaViewer.category")}
-                      </span>
-                      <span className="text-[var(--color-primaryTextColor)] font-medium">
-                        {selectedItem.category[lang]}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center justify-between py-2 border-b border-[var(--color-primaryTextColor)]/10">
-                      <span className="text-[var(--color-primaryTextColor)]/60 flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
-                        {t("mediaViewer.datePublished")}
-                      </span>
-                      <span className="text-[var(--color-primaryTextColor)] font-medium">
-                        {new Date(selectedItem.datePublished).toLocaleDateString(lang === 'ar' ? 'ar-SA' : 'en-US')}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center justify-between py-2 border-b border-[var(--color-primaryTextColor)]/10">
-                      <span className="text-[var(--color-primaryTextColor)]/60">
-                        {t("mediaViewer.resolution")}
-                      </span>
-                      <span className="text-[var(--color-primaryTextColor)] font-medium">
-                        {selectedItem.resolution}
-                      </span>
-                    </div>
-
-                    {/* Price Display */}
-                    <div className="flex items-center justify-between py-3 bg-gradient-to-r from-[var(--color-tertiaryColor)]/20 to-[var(--color-darkBlueColor)]/20 rounded-xl px-4">
-                      <span className="text-[var(--color-primaryTextColor)]/80 flex items-center gap-2">
-                        <DollarSign className="w-5 h-5" />
-                        {t("mediaViewer.price")}
-                      </span>
-                      <span className="text-[var(--color-sunsetGold)] font-bold text-xl">
-                        {selectedItem.price} {selectedItem.currency}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="space-y-3">
-                    <motion.button
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      onClick={() => handlePurchase(selectedItem)}
-                      className="w-full py-4 px-6 rounded-xl font-bold text-lg text-amber-950 transition-all duration-300 flex items-center justify-center gap-2"
-                      style={{ backgroundColor: "#fbbf24" }}
-                    >
-                      <ShoppingCart className="w-5 h-5" />
-                      {t("mediaViewer.buyNow")}
-                    </motion.button>
-
-                    <div className="flex gap-3">
-                      <motion.button
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        onClick={() => handleViewFullscreen(selectedItem)}
-                        className="flex-1 py-3 px-4 rounded-xl font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2"
-                        style={{ backgroundColor: "var(--color-tertiaryColor, #032747)" }}
-                      >
-                        <Eye className="w-4 h-4" />
-                        {t("mediaViewer.viewFullSize")}
-                      </motion.button>
-
-                      <motion.button
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        onClick={() => handleAddToCart(selectedItem)}
-                        className="flex-1 py-3 px-4 rounded-xl font-semibold text-white border border-gray-600 hover:border-blue-400 transition-all duration-300 flex items-center justify-center gap-2"
-                      >
-                        <ShoppingCart className="w-4 h-4" />
-                        {t("mediaViewer.addToCart")}
-                      </motion.button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
 
       {/* Login Modal */}
       <LoginModal

@@ -166,12 +166,12 @@ const CommentsSection = ({ postId }) => {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 relative z-10" dir={dir}>
+    <div className="mx-auto max-w-4xl px-3 sm:px-4 lg:px-6 py-8 sm:py-12 lg:py-16 relative z-10" dir={dir}>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="rounded-2xl backdrop-blur-md p-6 sm:p-8"
+        className="rounded-xl sm:rounded-2xl backdrop-blur-md p-4 sm:p-6 lg:p-8"
         style={{
           background: `
             linear-gradient(135deg,
@@ -188,24 +188,24 @@ const CommentsSection = ({ postId }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-8"
+          className="mb-6 sm:mb-8"
         >
-          <div className="flex items-center gap-4 mb-4">
-            <div className="p-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 shadow-lg">
-              <FiMessageCircle className="h-6 w-6 text-white" />
+          <div className="flex items-start sm:items-center gap-3 sm:gap-4 mb-4">
+            <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 shadow-lg flex-shrink-0">
+              <FiMessageCircle className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
             </div>
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+            <div className="flex-1 min-w-0">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">
                 {lang === "ar" ? "تعليقات" : "Comments"}
               </h3>
-              <div className="flex items-center gap-4 mt-2">
-                <p className="text-slate-400 flex items-center gap-2">
-                  <FiMessageCircle className="h-4 w-4" />
-                  {lang === "ar" ? `${comments.length} تعليق` : `${comments.length} Comment`}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-2">
+                <p className="text-slate-400 flex items-center gap-2 text-sm sm:text-base">
+                  <FiMessageCircle className="h-3 w-3 sm:h-4 sm:w-4" />
+                  {lang === "ar" ? `${comments.length} تعليق` : `${comments.length} Comment${comments.length !== 1 ? 's' : ''}`}
                 </p>
-                <div className="w-1 h-1 bg-slate-500 rounded-full"></div>
-                <p className="text-slate-400 flex items-center gap-2">
-                  <FiClock className="h-4 w-4" />
+                <div className="hidden sm:block w-1 h-1 bg-slate-500 rounded-full"></div>
+                <p className="text-slate-400 flex items-center gap-2 text-sm sm:text-base">
+                  <FiClock className="h-3 w-3 sm:h-4 sm:w-4" />
                   <span>{lang === "ar" ? "نشط الآن" : "Active Now"}</span>
                 </p>
               </div>
@@ -250,21 +250,21 @@ const CommentsSection = ({ postId }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-12"
+          className="mb-8 sm:mb-12"
         >
-          <div className="p-6 rounded-xl"
+          <div className="p-4 sm:p-6 rounded-xl"
             style={{
               background: "rgba(59, 130, 246, 0.05)",
               border: "1px solid rgba(59, 130, 246, 0.2)"
             }}
           >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-10 w-10 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
-                <FaUserCircle className="h-6 w-6 text-white" />
+            <div className="flex items-start sm:items-center gap-3 mb-4">
+              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                <FaUserCircle className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
               </div>
-              <div>
-                <p className="text-white font-medium">{lang === "ar" ? "مستخدم جديد" : "New User"}</p>
-                <p className="text-xs text-slate-400">{lang === "ar" ? "شارك رأيك حول هذا المقال" : "Share your thoughts about this article"}</p>
+              <div className="flex-1 min-w-0">
+                <p className="text-white font-medium text-sm sm:text-base">{lang === "ar" ? "مستخدم جديد" : "New User"}</p>
+                <p className="text-xs text-slate-400 mt-1 sm:mt-0">{lang === "ar" ? "شارك رأيك حول هذا المقال" : "Share your thoughts about this article"}</p>
               </div>
             </div>
 
@@ -275,23 +275,24 @@ const CommentsSection = ({ postId }) => {
                   onChange={(e) => setNewComment(e.target.value)}
                   placeholder={lang === "ar" ? "اكتب تعليقاً مفيداً ومحترماً" : "Write a helpful and respectful comment"}
                   rows={4}
-                  className="w-full rounded-xl p-4 text-white placeholder-slate-400 backdrop-blur-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-300"
+                  className="w-full rounded-xl p-3 sm:p-4 text-white placeholder-slate-400 backdrop-blur-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-300 text-sm sm:text-base"
                   style={{
                     background: "rgba(15, 23, 42, 0.8)",
                     border: "1px solid rgba(148, 163, 184, 0.3)"
                   }}
                 />
-                <div className="flex justify-between items-center mt-4">
-                  <div className="flex items-center gap-2 text-xs text-slate-400">
-                    <FiEdit3 className="h-4 w-4" />
-                    <span>{lang === "ar" ? "اكتب تعليقاً مفيداً" : "Write a helpful comment"}</span>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-4 mt-4">
+                  <div className="flex items-center gap-2 text-xs text-slate-400 order-2 sm:order-1">
+                    <FiEdit3 className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span className="hidden sm:inline">{lang === "ar" ? "اكتب تعليقاً مفيداً" : "Write a helpful comment"}</span>
+                    <span className="sm:hidden">{lang === "ar" ? "كن محترماً" : "Be respectful"}</span>
                   </div>
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     type="submit"
                     disabled={!newComment.trim() || isSubmitting}
-                    className="flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex items-center justify-center gap-2 rounded-lg px-4 sm:px-6 py-2.5 sm:py-3 text-sm font-semibold transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto order-1 sm:order-2"
                     style={{
                       background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
                       color: "#fff"
@@ -316,14 +317,14 @@ const CommentsSection = ({ postId }) => {
         </motion.div>
 
         {/* Enhanced Comments List */}
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           <AnimatePresence>
             {comments.length === 0 ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
-                className="text-center py-16"
+                className="text-center py-12 sm:py-16"
               >
                 <motion.div
                   animate={{
@@ -335,14 +336,14 @@ const CommentsSection = ({ postId }) => {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="mb-6"
+                  className="mb-4 sm:mb-6"
                 >
-                  <div className="inline-flex p-6 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30">
-                    <FiMessageCircle className="h-12 w-12 text-blue-400" />
+                  <div className="inline-flex p-4 sm:p-6 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30">
+                    <FiMessageCircle className="h-8 w-8 sm:h-12 sm:w-12 text-blue-400" />
                   </div>
                 </motion.div>
-                <h4 className="text-xl font-semibold text-white mb-2">{lang === "ar" ? "كن أول من يعلق!" : "Be the first to comment!"}</h4>
-                <p className="text-slate-400 max-w-md mx-auto">{lang === "ar" ? "لا توجد تعليقات حتى الآن" : "No comments yet"}</p>
+                <h4 className="text-lg sm:text-xl font-semibold text-white mb-2">{lang === "ar" ? "كن أول من يعلق!" : "Be the first to comment!"}</h4>
+                <p className="text-slate-400 max-w-md mx-auto text-sm sm:text-base px-4">{lang === "ar" ? "لا توجد تعليقات حتى الآن" : "No comments yet"}</p>
               </motion.div>
             ) : (
               comments.map((comment, index) => (
@@ -351,49 +352,38 @@ const CommentsSection = ({ postId }) => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="rounded-xl backdrop-blur-md p-6 group hover:shadow-lg transition-all duration-300"
+                  className="rounded-xl backdrop-blur-md p-4 sm:p-6 group hover:shadow-lg transition-all duration-300"
                   style={{
                     background: "rgba(30, 41, 59, 0.6)",
                     border: "1px solid rgba(148, 163, 184, 0.2)"
                   }}
                 >
                   {/* Enhanced Comment Header */}
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-start gap-4">
+                  <div className="flex items-start justify-between mb-3 sm:mb-4">
+                    <div className="flex items-start gap-3 sm:gap-4 flex-1 min-w-0">
                       <motion.div
                         whileHover={{ scale: 1.1, rotate: 5 }}
-                        className="relative"
+                        className="relative flex-shrink-0"
                       >
-                        <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
-                          <FiUser className="h-6 w-6 text-white" />
+                        <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                          <FiUser className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                         </div>
-                        <motion.div
-                          animate={{
-                            scale: [1, 1.2, 1],
-                            opacity: [0.5, 0.8, 0.5]
-                          }}
-                          transition={{
-                            duration: 2,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                          }}
-                          className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 -z-10"
-                        />
+                       
                       </motion.div>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-1">
-                          <h4 className="font-bold text-white text-lg">{comment.author}</h4>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 mb-1">
+                          <h4 className="font-bold text-white text-base sm:text-lg truncate">{comment.author}</h4>
                           <div className="flex items-center gap-1">
-                            <FiStar className="h-4 w-4 text-yellow-400" />
+                            <FiStar className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400" />
                             <span className="text-xs text-slate-400">{lang === "ar" ? "عضو نشط" : "Active Member"}</span>
                           </div>
                         </div>
-                        <div className="flex items-center gap-3 text-sm text-slate-400">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 text-xs sm:text-sm text-slate-400">
                           <div className="flex items-center gap-1">
                             <FiClock className="h-3 w-3" />
-                            <span>{comment.publishedAt.split("T")[0]}</span> 
+                            <span>{comment.publishedAt.split("T")[0]}</span>
                           </div>
-                          <div className="w-1 h-1 bg-slate-500 rounded-full"></div>
+                          <div className="hidden sm:block w-1 h-1 bg-slate-500 rounded-full"></div>
                           <div className="flex items-center gap-1">
                             <FiThumbsUp className="h-3 w-3" />
                             <span>{comment.likes} {lang === "ar" ? "إعجاب" : "Like"}</span>
@@ -404,33 +394,33 @@ const CommentsSection = ({ postId }) => {
                     <motion.button
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
-                      className="text-slate-400 hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-slate-700/50"
+                      className="text-slate-400 hover:text-white transition-colors duration-200 p-1.5 sm:p-2 rounded-lg hover:bg-slate-700/50 flex-shrink-0"
                     >
-                      <FiMoreVertical className="h-5 w-5" />
+                      <FiMoreVertical className="h-4 w-4 sm:h-5 sm:w-5" />
                     </motion.button>
                   </div>
 
                   {/* Enhanced Comment Content */}
-                  <div className="ml-16 rtl:ml-0 rtl:mr-16">
-                    <p className="text-slate-300 mb-6 leading-relaxed text-base">{comment.content}</p>
+                  <div className="ml-10 sm:ml-16 rtl:ml-0 rtl:mr-10 sm:rtl:mr-16">
+                    <p className="text-slate-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{comment.content}</p>
 
                     {/* Enhanced Comment Actions */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
+                      <div className="flex items-center gap-2 sm:gap-4">
                         <motion.button
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={() => handleLikeComment(comment.id)}
-                          className="flex items-center gap-2 text-sm transition-all duration-200 px-3 py-2 rounded-lg"
+                          className="flex items-center gap-2 text-xs sm:text-sm transition-all duration-200 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg"
                           style={{
                             color: likedComments.has(comment.id) ? "#ef4444" : "#94a3b8",
                             background: likedComments.has(comment.id) ? "rgba(239, 68, 68, 0.1)" : "rgba(148, 163, 184, 0.1)"
                           }}
                         >
                           {likedComments.has(comment.id) ? (
-                            <FaHeart className="h-4 w-4" />
+                            <FaHeart className="h-3 w-3 sm:h-4 sm:w-4" />
                           ) : (
-                            <FiHeart className="h-4 w-4" />
+                            <FiHeart className="h-3 w-3 sm:h-4 sm:w-4" />
                           )}
                           <span className="font-medium">{comment.likes + (likedComments.has(comment.id) ? 1 : 0)}</span>
                         </motion.button>
@@ -439,13 +429,13 @@ const CommentsSection = ({ postId }) => {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={() => setReplyTo(replyTo === comment.id ? null : comment.id)}
-                          className="flex items-center gap-2 text-sm transition-all duration-200 px-3 py-2 rounded-lg"
+                          className="flex items-center gap-2 text-xs sm:text-sm transition-all duration-200 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg"
                           style={{
                             color: replyTo === comment.id ? "#3b82f6" : "#94a3b8",
                             background: replyTo === comment.id ? "rgba(59, 130, 246, 0.1)" : "rgba(148, 163, 184, 0.1)"
                           }}
                         >
-                          <FiCornerDownRight className="h-4 w-4" />
+                          <FiCornerDownRight className="h-3 w-3 sm:h-4 sm:w-4" />
                           <span className="font-medium">{lang === "ar" ? "رد" : "Reply"}</span>
                         </motion.button>
                       </div>
@@ -454,7 +444,7 @@ const CommentsSection = ({ postId }) => {
                         <motion.button
                           whileHover={{ scale: 1.02 }}
                           onClick={() => toggleReplies(comment.id)}
-                          className="text-xs text-blue-400 hover:text-blue-300 transition-colors duration-200 flex items-center gap-1"
+                          className="text-xs text-blue-400 hover:text-blue-300 transition-colors duration-200 flex items-center gap-1 mt-2 sm:mt-0"
                         >
                           <span>{expandedReplies.has(comment.id) ? lang === "ar" ? "إخفاء" : "Hide" : lang === "ar" ? "عرض" : "Show"} {lang === "ar" ? "الردود" : "Replies"} ({comment.replies.length})</span>
                         </motion.button>
@@ -470,22 +460,22 @@ const CommentsSection = ({ postId }) => {
                         animate={{ opacity: 1, height: "auto", y: 0 }}
                         exit={{ opacity: 0, height: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
-                        className="mt-6 ml-16 rtl:ml-0 rtl:mr-16"
+                        className="mt-4 sm:mt-6 ml-10 sm:ml-16 rtl:ml-0 rtl:mr-10 sm:rtl:mr-16"
                       >
-                        <div className="p-4 rounded-xl"
+                        <div className="p-3 sm:p-4 rounded-xl"
                           style={{
                             background: "rgba(59, 130, 246, 0.05)",
                             border: "1px solid rgba(59, 130, 246, 0.2)"
                           }}
                         >
                           <div className="flex items-center gap-2 mb-3">
-                            <FiCornerDownRight className="h-4 w-4 text-blue-400" />
-                            <span className="text-sm text-blue-400 font-medium">{lang === "ar" ? `رد على ${comment.author}` : `Reply to ${comment.author}`}</span>
+                            <FiCornerDownRight className="h-3 w-3 sm:h-4 sm:w-4 text-blue-400" />
+                            <span className="text-xs sm:text-sm text-blue-400 font-medium truncate">{lang === "ar" ? `رد على ${comment.author}` : `Reply to ${comment.author}`}</span>
                           </div>
 
-                          <div className="flex gap-3">
-                            <div className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                              <FiUser className="h-4 w-4 text-white" />
+                          <div className="flex gap-2 sm:gap-3">
+                            <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                              <FiUser className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                             </div>
                             <div className="flex-1">
                               <textarea
@@ -493,18 +483,18 @@ const CommentsSection = ({ postId }) => {
                                 onChange={(e) => setReplyContent(e.target.value)}
                                 placeholder={lang  === "ar" ? "اكتب تعليقك..." : "Write your comment..."}
                                 rows={3}
-                                className="w-full rounded-lg p-3 text-white placeholder-slate-400 backdrop-blur-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-300"
+                                className="w-full rounded-lg p-2 sm:p-3 text-white placeholder-slate-400 backdrop-blur-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-300 text-sm sm:text-base"
                                 style={{
                                   background: "rgba(15, 23, 42, 0.8)",
                                   border: "1px solid rgba(148, 163, 184, 0.3)"
                                 }}
                               />
-                              <div className="flex justify-end gap-2 mt-3">
+                              <div className="flex flex-col sm:flex-row justify-end gap-2 mt-3">
                                 <motion.button
                                   whileHover={{ scale: 1.02 }}
                                   whileTap={{ scale: 0.98 }}
                                   onClick={() => setReplyTo(null)}
-                                  className="px-4 py-2 text-sm transition-all duration-200 rounded-lg"
+                                  className="px-3 sm:px-4 py-2 text-xs sm:text-sm transition-all duration-200 rounded-lg order-2 sm:order-1"
                                   style={{
                                     border: "1px solid rgba(148, 163, 184, 0.3)",
                                     color: "#94a3b8"
@@ -517,13 +507,13 @@ const CommentsSection = ({ postId }) => {
                                   whileTap={{ scale: 0.98 }}
                                   onClick={() => handleSubmitReply(comment.id)}
                                   disabled={!replyContent.trim()}
-                                  className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-300 disabled:opacity-50"
+                                  className="flex items-center justify-center gap-2 rounded-lg px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-300 disabled:opacity-50 order-1 sm:order-2"
                                   style={{
                                     background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
                                     color: "#fff"
                                   }}
                                 >
-                                  <FiSend className="h-4 w-4" />
+                                  <FiSend className="h-3 w-3 sm:h-4 sm:w-4" />
                                   {lang === "ar" ? "رد" : "Reply"}
                                 </motion.button>
                               </div>
@@ -541,7 +531,7 @@ const CommentsSection = ({ postId }) => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="mt-6 space-y-4 overflow-hidden"
+                        className="mt-4 sm:mt-6 space-y-3 sm:space-y-4 overflow-hidden"
                       >
                         {comment.replies.map((reply, replyIndex) => (
                           <motion.div
@@ -549,45 +539,47 @@ const CommentsSection = ({ postId }) => {
                             initial={{ opacity: 0, x: isRTL ? -30 : 30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.4, delay: replyIndex * 0.1 }}
-                            className="ml-16 rtl:ml-0 rtl:mr-16 rounded-lg p-4 border-l-4"
+                            className="ml-8 sm:ml-16 rtl:ml-0 rtl:mr-8 sm:rtl:mr-16 rounded-lg p-3 sm:p-4 border-l-2 sm:border-l-4"
                             style={{
                               background: "rgba(51, 65, 85, 0.4)",
                               border: "1px solid rgba(148, 163, 184, 0.1)",
                               borderLeftColor: "#3b82f6"
                             }}
                           >
-                            <div className="flex items-start gap-3 mb-3">
-                              <div className="h-8 w-8 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-md">
-                                <FiUser className="h-4 w-4 text-white" />
+                            <div className="flex items-start gap-2 sm:gap-3 mb-3">
+                              <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-md flex-shrink-0">
+                                <FiUser className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                               </div>
-                              <div className="flex-1">
-                                <div className="flex items-center gap-2 mb-1">
-                                  <h5 className="font-semibold text-white text-sm">{reply.author}</h5>
-                                  <span className="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30">
-                                    {lang === "ar" ? "رد" : "Reply"}
-                                  </span>
-                                  {reply.isAuthor && (
-                                    <span className="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30">
-                                      {lang === "ar" ? "الكاتب" : "Author"}
+                              <div className="flex-1 min-w-0">
+                                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 mb-1">
+                                  <h5 className="font-semibold text-white text-xs sm:text-sm truncate">{reply.author}</h5>
+                                  <div className="flex items-center gap-1 sm:gap-2">
+                                    <span className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30">
+                                      {lang === "ar" ? "رد" : "Reply"}
                                     </span>
-                                  )}
+                                    {reply.isAuthor && (
+                                      <span className="text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30">
+                                        {lang === "ar" ? "الكاتب" : "Author"}
+                                      </span>
+                                    )}
+                                  </div>
                                 </div>
                                 <div className="flex items-center gap-2 text-xs text-slate-400">
                                   <FiClock className="h-3 w-3" />
-                                  <span>{reply.publishedAt.split("T")[0]}</span> 
+                                  <span>{reply.publishedAt.split("T")[0]}</span>
                                 </div>
                               </div>
                             </div>
 
-                            <p className="text-slate-300 text-sm leading-relaxed ml-11 rtl:ml-0 rtl:mr-11 mb-3">{reply.content}</p>
+                            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed ml-8 sm:ml-11 rtl:ml-0 rtl:mr-8 sm:rtl:mr-11 mb-3">{reply.content}</p>
 
                             {/* Reply Actions */}
-                            <div className="flex items-center gap-3 ml-11 rtl:ml-0 rtl:mr-11">
+                            <div className="flex items-center gap-2 sm:gap-3 ml-8 sm:ml-11 rtl:ml-0 rtl:mr-8 sm:rtl:mr-11">
                               <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => handleLikeComment(reply.id, true, comment.id)}
-                                className="flex items-center gap-1 text-xs transition-colors duration-200 px-2 py-1 rounded-lg"
+                                className="flex items-center gap-1 text-xs transition-colors duration-200 px-1.5 sm:px-2 py-1 rounded-lg"
                                 style={{
                                   color: likedComments.has(`${comment.id}-${reply.id}`) ? "#ef4444" : "#94a3b8",
                                   background: likedComments.has(`${comment.id}-${reply.id}`) ? "rgba(239, 68, 68, 0.1)" : "rgba(148, 163, 184, 0.1)"

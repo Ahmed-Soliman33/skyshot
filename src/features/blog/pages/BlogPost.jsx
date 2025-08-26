@@ -272,19 +272,19 @@ const BlogPost = () => {
           initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="absolute top-16 left-6 rtl:left-auto  rtl:right-6 z-10"
+          className="absolute top-20 left-6 rtl:left-auto  rtl:right-6 z-10"
           >
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/blog")}
-            className="flex items-center gap-3 rounded-xl cursor-pointer px-5 py-3 text-white backdrop-blur-md transition-all duration-300 shadow-lg"
+            className="flex items-center gap-3 rounded-xl cursor-pointer text-sm md:text-base  px-3 py-1.5 md:px-5 md:py-3 text-white backdrop-blur-md transition-all duration-300 shadow-lg"
             style={{
               background: "rgba(15, 23, 42, 0.8)",
               border: "1px solid rgba(148, 163, 184, 0.2)"
             }}
           >
-            {isRTL ? <FiArrowRight className="h-5 w-5 text-blue-400" /> : <FiArrowLeft className="h-5 w-5 text-blue-400" />}
+            {isRTL ? <FiArrowRight className=" h-4 w-4 md:h-5 md:w-5 text-blue-400" /> : <FiArrowLeft className="h-4 w-4 md:h-5 md:w-5 text-blue-400" />}
             <span className="font-medium">{t("post.backToBlog")}</span>
           </motion.button>
         </motion.div>
@@ -302,7 +302,7 @@ const BlogPost = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold mb-6 backdrop-blur-sm"
+                className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 md:px-4 md:py-2 text-[.85rem] sm:text-sm font-semibold mb-6 backdrop-blur-sm"
                 style={{
                   background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
                   color: "#fff",
@@ -318,7 +318,7 @@ const BlogPost = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+                className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               >
                 {post.title}
               </motion.h1>
@@ -331,23 +331,23 @@ const BlogPost = () => {
                 className="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-300"
               >
                 <div className="flex items-center gap-2 bg-slate-800/50 rounded-lg px-3 py-2 backdrop-blur-sm">
-                  <FiUser className="h-4 w-4 text-blue-400" />
+                  <FiUser className="h-4 w-4 text-sm md:text-base md:h-4 md:w-4 text-blue-400" />
                   <span className="text-sm font-medium">{post.author}</span>
                 </div>
                 <div className="flex items-center gap-2 bg-slate-800/50 rounded-lg px-3 py-2 backdrop-blur-sm">
-                  <FiCalendar className="h-4 w-4 text-blue-400" />
+                  <FiCalendar className="h-4 w-4 text-sm md:text-base md:h-4 md:w-4 text-blue-400" />
                   <span className="text-sm">{post.publishedAt}</span>
                 </div>
                 <div className="flex items-center gap-2 bg-slate-800/50 rounded-lg px-3 py-2 backdrop-blur-sm">
-                  <FiClock className="h-4 w-4 text-blue-400" />
+                  <FiClock className="h-4 w-4 text-sm md:text-base md:h-4 md:w-4 text-blue-400" />
                   <span className="text-sm">{t("post.readTime", { minutes: post.readTime })}</span>
                 </div>
                 <div className="flex items-center gap-2 bg-slate-800/50 rounded-lg px-3 py-2 backdrop-blur-sm">
-                  <FiHeart className="h-4 w-4 text-red-400" />
+                  <FiHeart className="h-4 w-4 text-sm md:text-base md:h-4 md:w-4 text-red-400" />
                   <span className="text-sm">{post.likes}</span>
                 </div>
                 <div className="flex items-center gap-2 bg-slate-800/50 rounded-lg px-3 py-2 backdrop-blur-sm">
-                  <FiMessageCircle className="h-4 w-4 text-green-400" />
+                  <FiMessageCircle className="h-4 w-4 text-sm md:text-base md:h-4 md:w-4 text-green-400" />
                   <span className="text-sm">{post.comments}</span>
                 </div>
               </motion.div>
@@ -369,16 +369,16 @@ const BlogPost = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={handleLike}
-            className="rounded-xl p-3 backdrop-blur-md transition-all duration-300 shadow-lg"
+            className="rounded-xl p-2 md:p-3 backdrop-blur-md transition-all duration-300 shadow-lg"
             style={{
               background: isLiked ? "rgba(239, 68, 68, 0.2)" : "rgba(15, 23, 42, 0.8)",
               border: `1px solid ${isLiked ? "rgba(239, 68, 68, 0.3)" : "rgba(148, 163, 184, 0.2)"}`,
             }}
           >
             {isLiked ? (
-              <FaHeart className="h-5 w-5 text-red-400" />
+              <FaHeart className="h-4 w-4 md:h-5 md:w-5 text-red-400" />
             ) : (
-              <FiHeart className="h-5 w-5 text-slate-300" />
+              <FiHeart className="h-4 w-4 md:h-5 md:w-5 text-slate-300" />
             )}
           </motion.button>
 
@@ -387,16 +387,16 @@ const BlogPost = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={handleBookmark}
-            className="rounded-xl p-3 backdrop-blur-md transition-all duration-300 shadow-lg"
+            className="rounded-xl p-2 md:p-3 backdrop-blur-md transition-all duration-300 shadow-lg"
             style={{
               background: isBookmarked ? "rgba(59, 130, 246, 0.2)" : "rgba(15, 23, 42, 0.8)",
               border: `1px solid ${isBookmarked ? "rgba(59, 130, 246, 0.3)" : "rgba(148, 163, 184, 0.2)"}`,
             }}
           >
             {isBookmarked ? (
-              <FaBookmark className="h-5 w-5 text-blue-400" />
+              <FaBookmark className="h-4 w-4 md:h-5 md:w-5 text-blue-400" />
             ) : (
-              <FiBookmark className="h-5 w-5 text-slate-300" />
+              <FiBookmark className="h-4 w-4 md:h-5 md:w-5 text-slate-300" />
             )}
           </motion.button>
 
@@ -406,13 +406,13 @@ const BlogPost = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setShowShareMenu(!showShareMenu)}
-              className="rounded-xl p-3 backdrop-blur-md transition-all duration-300 shadow-lg"
+              className="rounded-xl p-2 md:p-3 backdrop-blur-md transition-all duration-300 shadow-lg"
               style={{
                 background: showShareMenu ? "rgba(34, 197, 94, 0.2)" : "rgba(15, 23, 42, 0.8)",
                 border: `1px solid ${showShareMenu ? "rgba(34, 197, 94, 0.3)" : "rgba(148, 163, 184, 0.2)"}`,
               }}
             >
-              <FiShare2 className={`h-5 w-5 ${showShareMenu ? 'text-green-400' : 'text-slate-300'}`} />
+              <FiShare2 className={`h-4 w-4 md:h-5 md:w-5 ${showShareMenu ? 'text-green-400' : 'text-slate-300'}`} />
             </motion.button>
             
             <AnimatePresence>
@@ -493,7 +493,7 @@ const BlogPost = () => {
               border: "1px solid rgba(59, 130, 246, 0.2)"
             }}
           >
-            <p className="text-lg text-blue-100 leading-relaxed italic mb-0">
+            <p className="text-sm sm:text-lg text-blue-100 leading-relaxed italic mb-0">
               { lang === "ar" ? "ملخص" : "Excerpt" } : {post.excerpt}
             </p>
           </motion.div>
@@ -503,10 +503,13 @@ const BlogPost = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-slate-300 leading-relaxed prose-headings:text-white prose-headings:font-bold prose-h2:text-2xl prose-h2:mb-4 prose-h2:mt-8 prose-p:mb-6 prose-p:leading-relaxed"
+            className="text-sm sm:text-base text-slate-300 leading-relaxed prose-headings:text-white prose-headings:font-bold prose-h2:text-2xl prose-h2:mb-4 prose-h2:mt-8 prose-p:mb-6 prose-p:leading-relaxed"
             dangerouslySetInnerHTML={{ __html: post.content }}
             style={{
-              fontSize: '1.1rem',
+              fontSize: {
+                sm: '.9rem',
+                md: '1.1rem'
+              },
               lineHeight: '1.8'
             }}
           />
@@ -527,7 +530,7 @@ const BlogPost = () => {
             <div className="p-2 rounded-lg bg-blue-500/20">
               <FiTag className="h-5 w-5 text-blue-400" />
             </div>
-            <h3 className="text-xl font-semibold text-white">{t("post.tags")}</h3>
+            <h3 className="text-sm sm:text-xl font-semibold text-white">{t("post.tags")}</h3>
           </div>
           <div className="flex flex-wrap gap-3">
             {post.tags.map((tag, index) => (
@@ -540,7 +543,7 @@ const BlogPost = () => {
                   scale: 1.05,
                   y: -2
                 }}
-                className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 cursor-pointer"
+                className="inline-flex items-center gap-2 rounded-lg px-3 py-1.5 md:px-4 md:py-2 text-[.85rem] sm:text-sm font-medium transition-all duration-300 cursor-pointer"
                 style={{
                   background: "rgba(59, 130, 246, 0.1)",
                   border: "1px solid rgba(59, 130, 246, 0.2)",
@@ -588,7 +591,7 @@ const BlogPost = () => {
               />
             </motion.div>
             <div className="flex-1">
-              <h4 className="text-2xl font-bold text-white mb-2">{post.author}</h4>
+              <h4 className="text-sm sm:text-2xl font-bold text-white mb-2">{post.author}</h4>
               <p className="text-blue-200 mb-3">{ lang === "ar" ? "مصور جوي محترف ومنشئ محتوى" : "Professional Aerial Photographer & Content Creator"}</p>
               <p className="text-slate-400 text-sm leading-relaxed">
 { lang === "ar" ? "أنا مصور جوي محترف ومنشئ محتوى، متخصص في تصوير الفيديو الجوي المثير للإعجاب، وله خبرة أكثر من 5 أعوام في هذا المجال." : "Specializing in cinematic drone photography and videography, capturing breathtaking perspectives from above with over 5 years of experience in the field."}              </p>
@@ -684,7 +687,7 @@ const BlogPost = () => {
           >
             <Link
               to={ prevPostId && `/blog/${prevPostId ? prevPostId : 1}`} 
-              className={`flex items-center  gap-4 rounded-xl px-6 py-4 text-white backdrop-blur-md transition-all duration-300 shadow-lg group   `}
+              className={`flex items-center  gap-4 rounded-xl px-4 py-3 md:px-6 md:py-4 text-white backdrop-blur-md transition-all duration-300 shadow-lg group   `}
               style={{
                 background: "rgba(15, 23, 42, 0.8)",
                 border: "1px solid rgba(148, 163, 184, 0.2)"
@@ -695,7 +698,7 @@ const BlogPost = () => {
               </div>
               <div>
                 <p className="text-xs text-slate-400 mb-1">Previous</p>
-                <span className="font-medium">{t("post.previousPost")}</span>
+                <span className="font-medium text-sm md:text-base">{t("post.previousPost")}</span>
               </div>
             </Link>
           </motion.button>
@@ -708,7 +711,7 @@ const BlogPost = () => {
           >
             <Link
               to={ nextPostId && `/blog/${nextPostId ? nextPostId : 1}`}
-              className="flex items-center gap-4 rounded-xl px-6 py-4 text-white backdrop-blur-md transition-all duration-300 shadow-lg group"
+              className="flex items-center gap-4 rounded-xl px-4 py-3 md:px-6 md:py-4 text-white backdrop-blur-md transition-all duration-300 shadow-lg group"
               style={{
                 background: "rgba(15, 23, 42, 0.8)",
                 border: "1px solid rgba(148, 163, 184, 0.2)"
@@ -716,7 +719,7 @@ const BlogPost = () => {
             >
               <div>
                 <p className="text-xs text-slate-400 mb-1">Next</p>
-                <span className="font-medium">{t("post.nextPost")}</span>
+                <span className="font-medium text-sm md:text-base">{t("post.nextPost")}</span>
               </div>
               <div className="p-2 rounded-lg bg-blue-500/20 group-hover:bg-blue-500/30 transition-colors">
                 {isRTL ? <FiArrowLeft className="h-5 w-5 text-blue-400" /> : <FiArrowRight className="h-5 w-5 text-blue-400" />}

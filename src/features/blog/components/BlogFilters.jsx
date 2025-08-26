@@ -35,7 +35,7 @@ const BlogFilters = ({
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-4"
         >
-          <h2 className="text-xl sm:text-5xl font-bold font-workSansFont text-white text-center"  style={{
+          <h2 className="text-3xl sm:text-5xl font-bold font-workSansFont text-white text-center"  style={{
                   background:
                     dir === "rtl"
                       ? "linear-gradient(135deg, var(--color-tertiaryColor) 0%, var(--color-primaryTextColor) 100%)"
@@ -49,7 +49,7 @@ const BlogFilters = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-sm sm:text-[1.1rem] text-slate-400 max-w-md mx-auto"
+          className="text-[.85rem] sm:text-[1.1rem] text-slate-400 max-w-md mx-auto"
         >
         {lang === "ar" ? "اكتشف أحدث رؤانا وقصص ما وراء الكواليس والإلهام الإبداعي من عالم التصوير والفيديو الجوي المتميز." :  "Discover our latest aerial photography insights and creative stories"}
         </motion.p>
@@ -64,7 +64,7 @@ const BlogFilters = ({
             placeholder={t("search.placeholder")}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full rounded-xl py-3 sm:py-4 pl-10 sm:pl-12 pr-10 sm:pr-12 text-sm sm:text-base backdrop-blur-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+            className="w-full rounded-xl py-3 sm:py-4 pl-10 sm:pl-12 pr-10 sm:pr-12 text-[.85rem] sm:text-base backdrop-blur-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             style={{
               background: "rgba(15, 23, 42, 0.8)",
               border: "1px solid rgba(148, 163, 184, 0.2)",

@@ -201,7 +201,7 @@ const BlogNewsletter = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-base mb-6 max-w-xl mx-auto leading-relaxed"
+            className="text-sm sm:text-base mb-6 max-w-xl mx-auto leading-relaxed"
             style={{ color: "var(--color-secondaryTextColor, #94a3b8)" }}
           >
             { lang === "ar" ? "انضم إلى مجتمعنا من محبي التصوير الجوي واحصل على نصائح مميزة وتلميحات إبداعية وقصص رائعة تم تسليمها إلى بريدك الإلكتروني." : "Join our community of aerial enthusiasts and get exclusive insights, creative tips, and breathtaking stories delivered to your inbox."}
@@ -224,7 +224,7 @@ const BlogNewsletter = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={ lang === "ar" ? "أدخل عنوان بريدك الإلكتروني" : "Enter your email address"}
                     required
-                    className="w-full rounded-lg pl-12 pr-4 py-3 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-300"
+                    className="w-full rounded-lg text-[.85rem] sm:text-base pl-12 pr-4 py-3 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-300"
                     style={{
                       background: "rgba(15, 23, 42, 0.8)",
                       border: "1px solid rgba(148, 163, 184, 0.3)",
@@ -238,7 +238,7 @@ const BlogNewsletter = () => {
                   whileTap={{ scale: 0.98 }}
                   type="submit"
                   disabled={isLoading}
-                  className="rounded-lg px-6 py-3 font-semibold transition-all duration-300 hover:shadow-lg disabled:opacity-50 flex items-center justify-center gap-2"
+                  className="rounded-lg text-[.85rem] sm:text-base  px-6 py-3 font-semibold transition-all duration-300 hover:shadow-lg disabled:opacity-50 flex items-center justify-center gap-2"
                   style={{
                     background: `linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)`,
                     color: "#fff",

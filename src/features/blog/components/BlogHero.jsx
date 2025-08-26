@@ -48,7 +48,7 @@ const BlogHero = () => {
                 color: "var(--color-primaryTextColor, #fff)"
               }}
             >
-              <FiCamera className="h-4 w-4 text-blue-400" />
+              <FiCamera className="h-4 w-4 text-sm md:text-base text-blue-400" />
               <span>{ lang === "ar" ? "مدونة سكاي شوت" : "SkyShot Blog"}</span>
             </motion.div>
 
@@ -57,7 +57,7 @@ const BlogHero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-7xl font-bold mb-6 leading-tight"
               style={{ color: "var(--color-primaryTextColor, #fff)" }}
             >
               { lang === "ar" ? "دعنا نساعدك في التقاط" : "LET US HELP YOU CAPTURE"}
@@ -83,7 +83,7 @@ const BlogHero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-2xl font-light max-w-3xl mx-auto"
+              className="text-lg md:text-2xl font-light max-w-3xl mx-auto"
               style={{ color: "var(--color-secondaryTextColor, #8892b0)" }}
             >
               { lang === "ar" ? "أفكار وتقنيات وقصص ما وراء الكواليس والإلهام الإبداعي من عالم التصوير والفيديو الجوي المتميز." : "Professional aerial photography insights, techniques, and stories from the sky"}
